@@ -1,0 +1,58 @@
+digraph G {
+    rankdir = TB;
+    newrank = true;
+    
+    # Cluster for schema.org Classes
+    subgraph cluster_schema {
+        label = "Schema.org Classes";
+        style = dashed;
+        color = lightblue;
+        rank = same;
+        "SoftwareApplication" [label="schema:SoftwareApplication", shape=box, style=filled, fillcolor=lightblue];
+        "Product" [label="schema:Product", shape=box, style=filled, fillcolor=lightblue];
+        "CreativeWork" [label="schema:CreativeWork", shape=box, style=filled, fillcolor=lightblue];
+        "Intangible" [label="schema:Intangible", shape=box, style=filled, fillcolor=lightblue];
+        "Person" [label="schema:Person", shape=box, style=filled, fillcolor=lightblue];
+        "Organization" [label="schema:Organization", shape=box, style=filled, fillcolor=lightblue];
+    }
+
+    # Other classes in the ontology
+    {
+        rank = same;
+        "Software" [label="sc:Software", shape=box];
+        "Hardware" [label="sc:Hardware", shape=box];
+        "License" [label="sc:License", shape=box];
+        "Vulnerability" [label="sc:Vulnerability", shape=box];
+        "VulnerabilityType" [label="sc:VulnerabilityType", shape=box];
+    }
+
+    {
+        rank = same;
+        "SoftwareVersion" [label="sc:SoftwareVersion", shape=box];
+        "HardwareVersion" [label="sc:HardwareVersion", shape=box];
+    }
+    
+    # Inheritance from schema.org
+    "Software" -> "SoftwareApplication" [arrowhead=onormal];
+    "Hardware" -> "Product" [arrowhead=onormal];
+    "License" -> "CreativeWork" [arrowhead=onormal];
+    "Vulnerability" -> "Intangible" [arrowhead=onormal];
+    "VulnerabilityType" -> "Intangible" [arrowhead=onormal];
+
+    # Relationships with schema.org
+    "Person" -> "Vulnerability" [label="discover", style=dotted, arrowhead=open];
+    "Organization" -> "Vulnerability" [label="discover", style=dotted, arrowhead=open];
+
+    # Inheritance in the ontology
+    "SoftwareVersion" -> "Software" [arrowhead=onormal];
+    "HardwareVersion" -> "Hardware" [arrowhead=onormal];
+
+    # Relationships in the ontology
+    "Software":e -> "SoftwareVersion" [label="hasSoftwareVersion", style=solid, arrowhead=open, minlen=2];
+    "Hardware":w -> "HardwareVersion" [label="hasHardwareVersion", style=solid, arrowhead=open];
+    "SoftwareVersion" -> "SoftwareVersion" [label="dependsOn", style=dashed, arrowhead=open];
+    "SoftwareVersion":s -> "HardwareVersion":s [label="OperatesOn", style=solid, arrowhead=open];
+    "SoftwareVersion" -> "License" [label="license", style=solid, arrowhead=open];
+    "SoftwareVersion" -> "Vulnerability" [label="vulnerableTo", style=dashed, arrowhead=open];
+    "Vulnerability" -> "VulnerabilityType" [label="vulnerabilityType", style=solid, arrowhead=open];
+}

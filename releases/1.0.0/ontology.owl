@@ -1,0 +1,742 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/secure-chain#"
+     xml:base="https://w3id.org/secure-chain"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/widoco/vocab#">
+    <owl:Ontology rdf:about="https://w3id.org/secure-chain">
+        <owl:versionIRI rdf:resource="https://w3id.org/secure-chain/1.0.0"/>
+        <dc:abstract>The Secure Chain Knowledge Graph is a comprehensive knowledge graph designed to model the relationships between software, hardware, vulnerabilities, and other entities to support secure and transparent management of software supply chains.</dc:abstract>
+        <dc:creator>Yifeng Di, Tianyi Zhang</dc:creator>
+        <dc:description>
+The Secure Chain Ontology builds on top of [Schema.org](http://schema.org/), as shown in the figure below, extending its vocabulary to seamlessly integrate with its metadata properties and enhance interoperability across various systems.
+
+We use sc:Software as a central concept in the Secure Chain Ontology to represent software within secure supply chains, with associated sc:SoftwareVersions capturing the evolution of software over time. These versions are critical for tracking vulnerabilities, compliance, and updates. The ontology models dependencies between software versions and other components, such as hardware, through properties like sc:dependsOn and sc:OperatesOn, which help assess potential risks and identify vulnerabilities. Additionally, sc:License links each software version to its legal aspects, ensuring compliance across the supply chain. The ontology also extends to hardware through sc:Hardware and sc:HardwareVersions, allowing for comprehensive tracking of both digital and physical components. Vulnerabilities are represented through sc:Vulnerability and sc:VulnerabilityType, with links to the entities that discover them, providing a detailed view of security risks across software and hardware versions.
+        </dc:description>
+        <dc:title>Secure Chain Ontology</dc:title>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-20</terms:created>
+        <terms:license rdf:resource="https://opensource.org/license/mit/"/>
+        <vann:preferredNamespacePrefix>sc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/secure-chain"/>
+        <voaf:extends rdf:resource="http://schema.org/"/>
+        <rdfs:comment>The Secure Chain Knowledge Graph is a comprehensive knowledge graph designed to model the relationships between software, hardware, vulnerabilities, and other entities to support secure and transparent management of software supply chains.</rdfs:comment>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <vocab:introduction>
+In today&apos;s increasingly complex technological ecosystem, software has become an integral part of crucial infrastructures. Underlying modern software systems is the supply chain of open-source software components, such as Apache Spark, whose functionalities are reused and integrated into various systems underpinning modern society.
+
+While software supply chains empower the rapid development of software systems, they also increase the risks, since any bugs, vulnerabilities, and unauthorized changes in upstream components can propagate to downstream systems and cause severe consequences. This is evident through many software crises witnessed in recent years, such as the [Heartbleed bug](https://heartbleed.com/), the [Equifax data breach](https://www.securityweek.com/equifax-confirms-apache-struts-flaw-used-hack/#:~:text=U.S.%20credit%20reporting%20agency%20Equifax,used%20to%20breach%20its%20systems.), and the [NPM left-pad incident](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code) that almost broke the Internet.
+
+Therefore, the Secure Chain Ontology is designed to provide a unified knowledge graph ontology that can capture rich, up-to-date information about software components in heterogenous software ecosystems. By extending widely adopted ontologies such as [Schema.org](http://schema.org/) and incorporating principles from software description vocabularies, the Secure Chain Ontology facilitates interoperability with existing data sources and standards, making it a powerful tool for security professionals, developers, and researchers.
+
+The ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.         
+        </vocab:introduction>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#extends -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocommons/voaf#extends"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#introduction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#introduction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/affiliation -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/affiliation">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment>
+            Indicates an individual&apos;s affiliation with an organization.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/codeRepository -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/codeRepository">
+        <rdfs:domain rdf:resource="http://schema.org/SoftwareApplication"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/contributor -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/contributor">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
+        <rdfs:comment>
+            Indicates the person who contributed to a creative work, such as a software application.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/description -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/description">
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/email -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/email">
+        <rdfs:domain rdf:resource="http://schema.org/Organization"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/familyName -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/familyName">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/givenName -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/givenName">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/identifier -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/identifier">
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/license -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/license">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:comment>
+            Associates a creative work, such as software, with its license.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/manufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/manufacturer">
+        <rdfs:domain rdf:resource="http://schema.org/Product"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment>
+            Indicates the organization responsible for manufacturing a product, such as hardware.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/name -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/name">
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/producer -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/producer">
+        <rdfs:domain rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment>
+            Indictes tahe organization that produced a creative work, such as a software application.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/programmingLanguage -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/programmingLanguage">
+        <rdfs:domain rdf:resource="http://schema.org/SoftwareApplication"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/url -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/url">
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:range rdf:resource="xsd:anyURI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#OperatesOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#OperatesOn">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain#HardwareVersion"/>
+        <rdfs:comment>
+            Indicates that a particular version of software operates on a particular version of hardware.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#dependsOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#dependsOn">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+        <rdfs:comment>
+            Indicates a dependency relationship between two software versions.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#discover -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#discover">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schema.org/Organization"/>
+                    <rdf:Description rdf:about="http://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain#Vulnerability"/>
+        <rdfs:comment>
+            Indicates that a person or organization has discovered a vulnerability in a software or hardware component.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#hasHardwareVersion -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#hasHardwareVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#Hardware"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain#HardwareVersion"/>
+        <rdfs:comment>
+            Indicates the relationship between a hardware product and its version.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#hasSoftwareVersion -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#hasSoftwareVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#Software"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+        <rdfs:comment>
+            Indicates the relationship between a software product and its version.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#versionName -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#versionName">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#vulnerabilityType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#vulnerabilityType">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#Vulnerability"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain#VulnerabilityType"/>
+        <rdfs:comment>
+            Associates a vulnerability with its specific type or classification.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/secure-chain#vulnerableTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#vulnerableTo">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain#Vulnerability"/>
+        <rdfs:comment>
+            Indicates that a particular version of software is vulnerable to a specific vulnerability.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/codeRepository -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/codeRepository"/>
+    
+
+
+    <!-- http://schema.org/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/description"/>
+    
+
+
+    <!-- http://schema.org/email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/email"/>
+    
+
+
+    <!-- http://schema.org/familyName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/familyName"/>
+    
+
+
+    <!-- http://schema.org/givenName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/givenName"/>
+    
+
+
+    <!-- http://schema.org/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/identifier"/>
+    
+
+
+    <!-- http://schema.org/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/name"/>
+    
+
+
+    <!-- http://schema.org/programmingLanguage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/programmingLanguage"/>
+    
+
+
+    <!-- http://schema.org/url -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/url"/>
+    
+
+
+    <!-- http://schema.org/version -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/version"/>
+    
+
+
+    <!-- https://w3id.org/secure-chain#versionName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/secure-chain#versionName">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/version"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+
+    <owl:Class rdf:about="http://schema.org/CreativeWork"/>
+    
+
+
+    <!-- http://schema.org/Intangible -->
+
+
+    <owl:Class rdf:about="http://schema.org/Intangible"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://schema.org/Product -->
+
+
+    <owl:Class rdf:about="http://schema.org/Product"/>
+    
+
+
+    <!-- http://schema.org/SoftwareApplication -->
+
+
+    <owl:Class rdf:about="http://schema.org/SoftwareApplication"/>
+    
+
+
+    <!-- http://schema.org/Thing -->
+
+
+    <owl:Class rdf:about="http://schema.org/Thing"/>
+    
+
+
+    <!-- https://w3id.org/secure-chain#Hardware -->
+
+
+    <owl:Class rdf:about="https://w3id.org/secure-chain#Hardware">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Product"/>
+        <rdfs:comment>
+            Represents hardware products that are part of a secure supply chain.
+        </rdfs:comment>
+        <rdfs:label>Hardware</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/secure-chain#HardwareVersion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/secure-chain#HardwareVersion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/secure-chain#Hardware"/>
+        <rdfs:comment>
+            Represents a specific version of a hardware product within the secure chain.
+        </rdfs:comment>
+        <rdfs:label>Hardware Version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/secure-chain#License -->
+
+
+    <owl:Class rdf:about="https://w3id.org/secure-chain#License">
+        <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:comment>
+            Represents licenses associated with software or hardware products in the secure supply chain.
+        </rdfs:comment>
+        <rdfs:label>License</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/secure-chain#Software -->
+
+
+    <owl:Class rdf:about="https://w3id.org/secure-chain#Software">
+        <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareApplication"/>
+        <rdfs:comment>
+            Represents software applications that are part of a secure supply chain.
+        </rdfs:comment>
+        <rdfs:label>Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/secure-chain#SoftwareVersion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/secure-chain#SoftwareVersion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/secure-chain#Software"/>
+        <rdfs:comment>
+            Represents a specific version of a software application within the secure chain.
+        </rdfs:comment>
+        <rdfs:label>Software Version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/secure-chain#Vulnerability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/secure-chain#Vulnerability">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
+        <rdfs:comment>
+            Represents vulnerabilities that may affect software or hardware components in the secure supply chain.
+        </rdfs:comment>
+        <rdfs:label>Vulnerability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/secure-chain#VulnerabilityType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/secure-chain#VulnerabilityType">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
+        <rdfs:comment>
+            Represents types or classifications of vulnerabilities affecting secure supply chains.
+        </rdfs:comment>
+        <rdfs:label>Vulnerability Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- xsd:anyURI -->
+
+
+    <owl:Class rdf:about="xsd:anyURI"/>
+    
+
+
+    <!-- xsd:string -->
+
+
+    <owl:Class rdf:about="xsd:string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://schema.org/codeRepository">
+        <rdfs:comment>
+            Represents the URL of a software application&apos;s source code repository.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/description">
+        <rdfs:comment>
+            Provides a description for any resource in the ontology.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/email">
+        <rdfs:comment>
+            Represents the email address associated with a person or organization.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/familyName">
+        <rdfs:comment>
+            Represents the family name (surname) of a person.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/givenName">
+        <rdfs:comment>
+            Represents the given name (first name) of a person.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/identifier">
+        <rdfs:comment>
+            Represents a unique identifier for any resource in the ontology.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/name">
+        <rdfs:comment>
+            Represents the name of any resource in the ontology.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/programmingLanguage">
+        <rdfs:comment>
+            Indicates the programming language used to develop a software application.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/url">
+        <rdfs:comment>
+            Represents the URL of any resource in the ontology.
+        </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/secure-chain#versionName">
+        <rdfs:comment>
+            Represents the version name of a software or hardware product.
+        </rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
