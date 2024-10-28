@@ -40,6 +40,16 @@ jobs:
           cp -r "$latest_path"/* ./
           # Copy index-en.html as index.html for the root
           cp index-en.html index.html
+      - name: Copy All Release Folders to Root
+        run: |
+          for folder in releases/*/; do
+            # If index-en.html exists in the folder, copy it as index.html within the folder
+            if [ -f "$folder/index-en.html" ]; then
+              cp "$folder/index-en.html" "$folder/index.html"
+            # Copy the entire folder to the root, preserving folder structure
+            cp -r "$folder" ./
+            fi
+          done
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
