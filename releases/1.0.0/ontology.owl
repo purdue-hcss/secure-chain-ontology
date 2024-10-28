@@ -309,12 +309,12 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#OperatesOn -->
+    <!-- https://w3id.org/secure-chain/OperatesOn -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#OperatesOn">
-        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
-        <rdfs:range rdf:resource="https://w3id.org/secure-chain#HardwareVersion"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/OperatesOn">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain/SoftwareVersion"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain/HardwareVersion"/>
         <rdfs:comment>
             Indicates that a particular version of software operates on a particular version of hardware.
         </rdfs:comment>
@@ -322,12 +322,12 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#dependsOn -->
+    <!-- https://w3id.org/secure-chain/dependsOn -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#dependsOn">
-        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
-        <rdfs:range rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/dependsOn">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain/SoftwareVersion"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain/SoftwareVersion"/>
         <rdfs:comment>
             Indicates a dependency relationship between two software versions.
         </rdfs:comment>
@@ -335,10 +335,10 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#discover -->
+    <!-- https://w3id.org/secure-chain/discover -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#discover">
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/discover">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -347,7 +347,7 @@ The ontology supports key use cases such as risk analysis, secure software devel
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/secure-chain#Vulnerability"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain/Vulnerability"/>
         <rdfs:comment>
             Indicates that a person or organization has discovered a vulnerability in a software or hardware component.
         </rdfs:comment>
@@ -355,12 +355,12 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#hasHardwareVersion -->
+    <!-- https://w3id.org/secure-chain/hasHardwareVersion -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#hasHardwareVersion">
-        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#Hardware"/>
-        <rdfs:range rdf:resource="https://w3id.org/secure-chain#HardwareVersion"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/hasHardwareVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain/Hardware"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain/HardwareVersion"/>
         <rdfs:comment>
             Indicates the relationship between a hardware product and its version.
         </rdfs:comment>
@@ -368,12 +368,12 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#hasSoftwareVersion -->
+    <!-- https://w3id.org/secure-chain/hasSoftwareVersion -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#hasSoftwareVersion">
-        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#Software"/>
-        <rdfs:range rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/hasSoftwareVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain/Software"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain/SoftwareVersion"/>
         <rdfs:comment>
             Indicates the relationship between a software product and its version.
         </rdfs:comment>
@@ -381,22 +381,29 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#versionName -->
+    <!-- https://w3id.org/secure-chain/versionName -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#versionName">
-        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/versionName">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/secure-chain/HardwareVersion"/>
+                    <rdf:Description rdf:about="https://w3id.org/secure-chain/SoftwareVersion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="xsd:string"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/secure-chain#vulnerabilityType -->
+    <!-- https://w3id.org/secure-chain/vulnerabilityType -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#vulnerabilityType">
-        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#Vulnerability"/>
-        <rdfs:range rdf:resource="https://w3id.org/secure-chain#VulnerabilityType"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/vulnerabilityType">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain/Vulnerability"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain/VulnerabilityType"/>
         <rdfs:comment>
             Associates a vulnerability with its specific type or classification.
         </rdfs:comment>
@@ -404,12 +411,12 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#vulnerableTo -->
+    <!-- https://w3id.org/secure-chain/vulnerableTo -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain#vulnerableTo">
-        <rdfs:domain rdf:resource="https://w3id.org/secure-chain#SoftwareVersion"/>
-        <rdfs:range rdf:resource="https://w3id.org/secure-chain#Vulnerability"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/secure-chain/vulnerableTo">
+        <rdfs:domain rdf:resource="https://w3id.org/secure-chain/SoftwareVersion"/>
+        <rdfs:range rdf:resource="https://w3id.org/secure-chain/Vulnerability"/>
         <rdfs:comment>
             Indicates that a particular version of software is vulnerable to a specific vulnerability.
         </rdfs:comment>
@@ -499,10 +506,10 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#versionName -->
+    <!-- https://w3id.org/secure-chain/versionName -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/secure-chain#versionName">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/secure-chain/versionName">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/version"/>
     </owl:DatatypeProperty>
     
@@ -569,10 +576,10 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#Hardware -->
+    <!-- https://w3id.org/secure-chain/Hardware -->
 
 
-    <owl:Class rdf:about="https://w3id.org/secure-chain#Hardware">
+    <owl:Class rdf:about="https://w3id.org/secure-chain/Hardware">
         <rdfs:subClassOf rdf:resource="http://schema.org/Product"/>
         <rdfs:comment>
             Represents hardware products that are part of a secure supply chain.
@@ -582,11 +589,11 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#HardwareVersion -->
+    <!-- https://w3id.org/secure-chain/HardwareVersion -->
 
 
-    <owl:Class rdf:about="https://w3id.org/secure-chain#HardwareVersion">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/secure-chain#Hardware"/>
+    <owl:Class rdf:about="https://w3id.org/secure-chain/HardwareVersion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/secure-chain/Hardware"/>
         <rdfs:comment>
             Represents a specific version of a hardware product within the secure chain.
         </rdfs:comment>
@@ -595,10 +602,10 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#License -->
+    <!-- https://w3id.org/secure-chain/License -->
 
 
-    <owl:Class rdf:about="https://w3id.org/secure-chain#License">
+    <owl:Class rdf:about="https://w3id.org/secure-chain/License">
         <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
         <rdfs:comment>
             Represents licenses associated with software or hardware products in the secure supply chain.
@@ -608,10 +615,10 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#Software -->
+    <!-- https://w3id.org/secure-chain/Software -->
 
 
-    <owl:Class rdf:about="https://w3id.org/secure-chain#Software">
+    <owl:Class rdf:about="https://w3id.org/secure-chain/Software">
         <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareApplication"/>
         <rdfs:comment>
             Represents software applications that are part of a secure supply chain.
@@ -621,11 +628,11 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#SoftwareVersion -->
+    <!-- https://w3id.org/secure-chain/SoftwareVersion -->
 
 
-    <owl:Class rdf:about="https://w3id.org/secure-chain#SoftwareVersion">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/secure-chain#Software"/>
+    <owl:Class rdf:about="https://w3id.org/secure-chain/SoftwareVersion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/secure-chain/Software"/>
         <rdfs:comment>
             Represents a specific version of a software application within the secure chain.
         </rdfs:comment>
@@ -634,10 +641,10 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#Vulnerability -->
+    <!-- https://w3id.org/secure-chain/Vulnerability -->
 
 
-    <owl:Class rdf:about="https://w3id.org/secure-chain#Vulnerability">
+    <owl:Class rdf:about="https://w3id.org/secure-chain/Vulnerability">
         <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
         <rdfs:comment>
             Represents vulnerabilities that may affect software or hardware components in the secure supply chain.
@@ -647,10 +654,10 @@ The ontology supports key use cases such as risk analysis, secure software devel
     
 
 
-    <!-- https://w3id.org/secure-chain#VulnerabilityType -->
+    <!-- https://w3id.org/secure-chain/VulnerabilityType -->
 
 
-    <owl:Class rdf:about="https://w3id.org/secure-chain#VulnerabilityType">
+    <owl:Class rdf:about="https://w3id.org/secure-chain/VulnerabilityType">
         <rdfs:subClassOf rdf:resource="http://schema.org/Intangible"/>
         <rdfs:comment>
             Represents types or classifications of vulnerabilities affecting secure supply chains.
@@ -728,7 +735,7 @@ The ontology supports key use cases such as risk analysis, secure software devel
             Represents the URL of any resource in the ontology.
         </rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/secure-chain#versionName">
+    <rdf:Description rdf:about="https://w3id.org/secure-chain/versionName">
         <rdfs:comment>
             Represents the version name of a software or hardware product.
         </rdfs:comment>

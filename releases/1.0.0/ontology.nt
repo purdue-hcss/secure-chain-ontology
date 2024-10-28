@@ -155,21 +155,21 @@
 <http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Thing> .
 <http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:anyURI> .
 # 
-# https://w3id.org/secure-chain#OperatesOn
-<https://w3id.org/secure-chain#OperatesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#OperatesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain#SoftwareVersion> .
-<https://w3id.org/secure-chain#OperatesOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain#HardwareVersion> .
-<https://w3id.org/secure-chain#OperatesOn> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a particular version of software operates on a particular version of hardware.\n        " .
+# https://w3id.org/secure-chain/OperatesOn
+<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/SoftwareVersion> .
+<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/HardwareVersion> .
+<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a particular version of software operates on a particular version of hardware.\n        " .
 # 
-# https://w3id.org/secure-chain#dependsOn
-<https://w3id.org/secure-chain#dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain#SoftwareVersion> .
-<https://w3id.org/secure-chain#dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain#SoftwareVersion> .
-<https://w3id.org/secure-chain#dependsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates a dependency relationship between two software versions.\n        " .
+# https://w3id.org/secure-chain/dependsOn
+<https://w3id.org/secure-chain/dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/SoftwareVersion> .
+<https://w3id.org/secure-chain/dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/SoftwareVersion> .
+<https://w3id.org/secure-chain/dependsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates a dependency relationship between two software versions.\n        " .
 # 
-# https://w3id.org/secure-chain#discover
-<https://w3id.org/secure-chain#discover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#discover> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+# https://w3id.org/secure-chain/discover
+<https://w3id.org/secure-chain/discover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/discover> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
@@ -178,37 +178,45 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Organization> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#discover> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain#Vulnerability> .
-<https://w3id.org/secure-chain#discover> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a person or organization has discovered a vulnerability in a software or hardware component.\n        " .
+<https://w3id.org/secure-chain/discover> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/Vulnerability> .
+<https://w3id.org/secure-chain/discover> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a person or organization has discovered a vulnerability in a software or hardware component.\n        " .
 # 
-# https://w3id.org/secure-chain#hasHardwareVersion
-<https://w3id.org/secure-chain#hasHardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain#Hardware> .
-<https://w3id.org/secure-chain#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain#HardwareVersion> .
-<https://w3id.org/secure-chain#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the relationship between a hardware product and its version.\n        " .
+# https://w3id.org/secure-chain/hasHardwareVersion
+<https://w3id.org/secure-chain/hasHardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/Hardware> .
+<https://w3id.org/secure-chain/hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/HardwareVersion> .
+<https://w3id.org/secure-chain/hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the relationship between a hardware product and its version.\n        " .
 # 
-# https://w3id.org/secure-chain#hasSoftwareVersion
-<https://w3id.org/secure-chain#hasSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain#Software> .
-<https://w3id.org/secure-chain#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain#SoftwareVersion> .
-<https://w3id.org/secure-chain#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the relationship between a software product and its version.\n        " .
+# https://w3id.org/secure-chain/hasSoftwareVersion
+<https://w3id.org/secure-chain/hasSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/Software> .
+<https://w3id.org/secure-chain/hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/SoftwareVersion> .
+<https://w3id.org/secure-chain/hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the relationship between a software product and its version.\n        " .
 # 
-# https://w3id.org/secure-chain#versionName
-<https://w3id.org/secure-chain#versionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#versionName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain#SoftwareVersion> .
-<https://w3id.org/secure-chain#versionName> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
+# https://w3id.org/secure-chain/versionName
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/secure-chain/SoftwareVersion> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/secure-chain/HardwareVersion> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
 # 
-# https://w3id.org/secure-chain#vulnerabilityType
-<https://w3id.org/secure-chain#vulnerabilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#vulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain#Vulnerability> .
-<https://w3id.org/secure-chain#vulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain#VulnerabilityType> .
-<https://w3id.org/secure-chain#vulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Associates a vulnerability with its specific type or classification.\n        " .
+# https://w3id.org/secure-chain/vulnerabilityType
+<https://w3id.org/secure-chain/vulnerabilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/vulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/Vulnerability> .
+<https://w3id.org/secure-chain/vulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/VulnerabilityType> .
+<https://w3id.org/secure-chain/vulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Associates a vulnerability with its specific type or classification.\n        " .
 # 
-# https://w3id.org/secure-chain#vulnerableTo
-<https://w3id.org/secure-chain#vulnerableTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain#vulnerableTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain#SoftwareVersion> .
-<https://w3id.org/secure-chain#vulnerableTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain#Vulnerability> .
-<https://w3id.org/secure-chain#vulnerableTo> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a particular version of software is vulnerable to a specific vulnerability.\n        " .
+# https://w3id.org/secure-chain/vulnerableTo
+<https://w3id.org/secure-chain/vulnerableTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/vulnerableTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/SoftwareVersion> .
+<https://w3id.org/secure-chain/vulnerableTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/Vulnerability> .
+<https://w3id.org/secure-chain/vulnerableTo> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a particular version of software is vulnerable to a specific vulnerability.\n        " .
 # 
 # 
 # 
@@ -249,9 +257,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://schema.org/version
 <http://schema.org/version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# https://w3id.org/secure-chain#versionName
-<https://w3id.org/secure-chain#versionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/secure-chain#versionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/version> .
+# https://w3id.org/secure-chain/versionName
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/version> .
 # 
 # 
 # 
@@ -277,47 +285,47 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://schema.org/Thing
 # 
-# https://w3id.org/secure-chain#Hardware
-<https://w3id.org/secure-chain#Hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#Hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Product> .
-<https://w3id.org/secure-chain#Hardware> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents hardware products that are part of a secure supply chain.\n        " .
-<https://w3id.org/secure-chain#Hardware> <http://www.w3.org/2000/01/rdf-schema#label> "Hardware" .
+# https://w3id.org/secure-chain/Hardware
+<https://w3id.org/secure-chain/Hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/Hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Product> .
+<https://w3id.org/secure-chain/Hardware> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents hardware products that are part of a secure supply chain.\n        " .
+<https://w3id.org/secure-chain/Hardware> <http://www.w3.org/2000/01/rdf-schema#label> "Hardware" .
 # 
-# https://w3id.org/secure-chain#HardwareVersion
-<https://w3id.org/secure-chain#HardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/secure-chain#Hardware> .
-<https://w3id.org/secure-chain#HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents a specific version of a hardware product within the secure chain.\n        " .
-<https://w3id.org/secure-chain#HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Hardware Version" .
+# https://w3id.org/secure-chain/HardwareVersion
+<https://w3id.org/secure-chain/HardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/secure-chain/Hardware> .
+<https://w3id.org/secure-chain/HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents a specific version of a hardware product within the secure chain.\n        " .
+<https://w3id.org/secure-chain/HardwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Hardware Version" .
 # 
-# https://w3id.org/secure-chain#License
-<https://w3id.org/secure-chain#License> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#License> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
-<https://w3id.org/secure-chain#License> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents licenses associated with software or hardware products in the secure supply chain.\n        " .
-<https://w3id.org/secure-chain#License> <http://www.w3.org/2000/01/rdf-schema#label> "License" .
+# https://w3id.org/secure-chain/License
+<https://w3id.org/secure-chain/License> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/License> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<https://w3id.org/secure-chain/License> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents licenses associated with software or hardware products in the secure supply chain.\n        " .
+<https://w3id.org/secure-chain/License> <http://www.w3.org/2000/01/rdf-schema#label> "License" .
 # 
-# https://w3id.org/secure-chain#Software
-<https://w3id.org/secure-chain#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/SoftwareApplication> .
-<https://w3id.org/secure-chain#Software> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents software applications that are part of a secure supply chain.\n        " .
-<https://w3id.org/secure-chain#Software> <http://www.w3.org/2000/01/rdf-schema#label> "Software" .
+# https://w3id.org/secure-chain/Software
+<https://w3id.org/secure-chain/Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/SoftwareApplication> .
+<https://w3id.org/secure-chain/Software> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents software applications that are part of a secure supply chain.\n        " .
+<https://w3id.org/secure-chain/Software> <http://www.w3.org/2000/01/rdf-schema#label> "Software" .
 # 
-# https://w3id.org/secure-chain#SoftwareVersion
-<https://w3id.org/secure-chain#SoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/secure-chain#Software> .
-<https://w3id.org/secure-chain#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents a specific version of a software application within the secure chain.\n        " .
-<https://w3id.org/secure-chain#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Software Version" .
+# https://w3id.org/secure-chain/SoftwareVersion
+<https://w3id.org/secure-chain/SoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/secure-chain/Software> .
+<https://w3id.org/secure-chain/SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents a specific version of a software application within the secure chain.\n        " .
+<https://w3id.org/secure-chain/SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Software Version" .
 # 
-# https://w3id.org/secure-chain#Vulnerability
-<https://w3id.org/secure-chain#Vulnerability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#Vulnerability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Intangible> .
-<https://w3id.org/secure-chain#Vulnerability> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents vulnerabilities that may affect software or hardware components in the secure supply chain.\n        " .
-<https://w3id.org/secure-chain#Vulnerability> <http://www.w3.org/2000/01/rdf-schema#label> "Vulnerability" .
+# https://w3id.org/secure-chain/Vulnerability
+<https://w3id.org/secure-chain/Vulnerability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/Vulnerability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Intangible> .
+<https://w3id.org/secure-chain/Vulnerability> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents vulnerabilities that may affect software or hardware components in the secure supply chain.\n        " .
+<https://w3id.org/secure-chain/Vulnerability> <http://www.w3.org/2000/01/rdf-schema#label> "Vulnerability" .
 # 
-# https://w3id.org/secure-chain#VulnerabilityType
-<https://w3id.org/secure-chain#VulnerabilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain#VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Intangible> .
-<https://w3id.org/secure-chain#VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents types or classifications of vulnerabilities affecting secure supply chains.\n        " .
-<https://w3id.org/secure-chain#VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#label> "Vulnerability Type" .
+# https://w3id.org/secure-chain/VulnerabilityType
+<https://w3id.org/secure-chain/VulnerabilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Intangible> .
+<https://w3id.org/secure-chain/VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents types or classifications of vulnerabilities affecting secure supply chains.\n        " .
+<https://w3id.org/secure-chain/VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#label> "Vulnerability Type" .
 # 
 # xsd:anyURI
 # 
@@ -350,6 +358,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 <http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the URL of any resource in the ontology.\n        " .
 # 
-<https://w3id.org/secure-chain#versionName> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the version name of a software or hardware product.\n        " .
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the version name of a software or hardware product.\n        " .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

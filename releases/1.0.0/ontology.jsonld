@@ -9,6 +9,16 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/secure-chain/HardwareVersion"
+    }, {
+      "@id" : "https://w3id.org/secure-chain/SoftwareVersion"
+    } ]
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -274,7 +284,7 @@
     "@value" : "\nIn today's increasingly complex technological ecosystem, software has become an integral part of crucial infrastructures. Underlying modern software systems is the supply chain of open-source software components, such as Apache Spark, whose functionalities are reused and integrated into various systems underpinning modern society.\n\nWhile software supply chains empower the rapid development of software systems, they also increase the risks, since any bugs, vulnerabilities, and unauthorized changes in upstream components can propagate to downstream systems and cause severe consequences. This is evident through many software crises witnessed in recent years, such as the [Heartbleed bug](https://heartbleed.com/), the [Equifax data breach](https://www.securityweek.com/equifax-confirms-apache-struts-flaw-used-hack/#:~:text=U.S.%20credit%20reporting%20agency%20Equifax,used%20to%20breach%20its%20systems.), and the [NPM left-pad incident](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code) that almost broke the Internet.\n\nTherefore, the Secure Chain Ontology is designed to provide a unified knowledge graph ontology that can capture rich, up-to-date information about software components in heterogenous software ecosystems. By extending widely adopted ontologies such as [Schema.org](http://schema.org/) and incorporating principles from software description vocabularies, the Secure Chain Ontology facilitates interoperability with existing data sources and standards, making it a powerful tool for security professionals, developers, and researchers.\n\nThe ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.\n        "
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#Hardware",
+  "@id" : "https://w3id.org/secure-chain/Hardware",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents hardware products that are part of a secure supply chain.\n        "
@@ -286,7 +296,7 @@
     "@id" : "http://schema.org/Product"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#HardwareVersion",
+  "@id" : "https://w3id.org/secure-chain/HardwareVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents a specific version of a hardware product within the secure chain.\n        "
@@ -295,10 +305,10 @@
     "@value" : "Hardware Version"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/secure-chain#Hardware"
+    "@id" : "https://w3id.org/secure-chain/Hardware"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#License",
+  "@id" : "https://w3id.org/secure-chain/License",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents licenses associated with software or hardware products in the secure supply chain.\n        "
@@ -310,19 +320,19 @@
     "@id" : "http://schema.org/CreativeWork"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#OperatesOn",
+  "@id" : "https://w3id.org/secure-chain/OperatesOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Indicates that a particular version of software operates on a particular version of hardware.\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/secure-chain#SoftwareVersion"
+    "@id" : "https://w3id.org/secure-chain/SoftwareVersion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/secure-chain#HardwareVersion"
+    "@id" : "https://w3id.org/secure-chain/HardwareVersion"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#Software",
+  "@id" : "https://w3id.org/secure-chain/Software",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents software applications that are part of a secure supply chain.\n        "
@@ -334,7 +344,7 @@
     "@id" : "http://schema.org/SoftwareApplication"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#SoftwareVersion",
+  "@id" : "https://w3id.org/secure-chain/SoftwareVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents a specific version of a software application within the secure chain.\n        "
@@ -343,10 +353,10 @@
     "@value" : "Software Version"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/secure-chain#Software"
+    "@id" : "https://w3id.org/secure-chain/Software"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#Vulnerability",
+  "@id" : "https://w3id.org/secure-chain/Vulnerability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents vulnerabilities that may affect software or hardware components in the secure supply chain.\n        "
@@ -358,7 +368,7 @@
     "@id" : "http://schema.org/Intangible"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#VulnerabilityType",
+  "@id" : "https://w3id.org/secure-chain/VulnerabilityType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents types or classifications of vulnerabilities affecting secure supply chains.\n        "
@@ -370,19 +380,19 @@
     "@id" : "http://schema.org/Intangible"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#dependsOn",
+  "@id" : "https://w3id.org/secure-chain/dependsOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Indicates a dependency relationship between two software versions.\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/secure-chain#SoftwareVersion"
+    "@id" : "https://w3id.org/secure-chain/SoftwareVersion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/secure-chain#SoftwareVersion"
+    "@id" : "https://w3id.org/secure-chain/SoftwareVersion"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#discover",
+  "@id" : "https://w3id.org/secure-chain/discover",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Indicates that a person or organization has discovered a vulnerability in a software or hardware component.\n        "
@@ -391,40 +401,40 @@
     "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/secure-chain#Vulnerability"
+    "@id" : "https://w3id.org/secure-chain/Vulnerability"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#hasHardwareVersion",
+  "@id" : "https://w3id.org/secure-chain/hasHardwareVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Indicates the relationship between a hardware product and its version.\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/secure-chain#Hardware"
+    "@id" : "https://w3id.org/secure-chain/Hardware"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/secure-chain#HardwareVersion"
+    "@id" : "https://w3id.org/secure-chain/HardwareVersion"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#hasSoftwareVersion",
+  "@id" : "https://w3id.org/secure-chain/hasSoftwareVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Indicates the relationship between a software product and its version.\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/secure-chain#Software"
+    "@id" : "https://w3id.org/secure-chain/Software"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/secure-chain#SoftwareVersion"
+    "@id" : "https://w3id.org/secure-chain/SoftwareVersion"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#versionName",
+  "@id" : "https://w3id.org/secure-chain/versionName",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Represents the version name of a software or hardware product.\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/secure-chain#SoftwareVersion"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "xsd:string"
@@ -433,28 +443,28 @@
     "@id" : "http://schema.org/version"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#vulnerabilityType",
+  "@id" : "https://w3id.org/secure-chain/vulnerabilityType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Associates a vulnerability with its specific type or classification.\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/secure-chain#Vulnerability"
+    "@id" : "https://w3id.org/secure-chain/Vulnerability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/secure-chain#VulnerabilityType"
+    "@id" : "https://w3id.org/secure-chain/VulnerabilityType"
   } ]
 }, {
-  "@id" : "https://w3id.org/secure-chain#vulnerableTo",
+  "@id" : "https://w3id.org/secure-chain/vulnerableTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n            Indicates that a particular version of software is vulnerable to a specific vulnerability.\n        "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/secure-chain#SoftwareVersion"
+    "@id" : "https://w3id.org/secure-chain/SoftwareVersion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/secure-chain#Vulnerability"
+    "@id" : "https://w3id.org/secure-chain/Vulnerability"
   } ]
 }, {
   "@id" : "https://w3id.org/widoco/vocab#introduction",

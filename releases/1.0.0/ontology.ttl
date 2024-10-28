@@ -188,75 +188,79 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:range <xsd:anyURI> .
 
 
-###  https://w3id.org/secure-chain#OperatesOn
-:OperatesOn rdf:type owl:ObjectProperty ;
-            rdfs:domain :SoftwareVersion ;
-            rdfs:range :HardwareVersion ;
-            rdfs:comment """
+###  https://w3id.org/secure-chain/OperatesOn
+<https://w3id.org/secure-chain/OperatesOn> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/secure-chain/SoftwareVersion> ;
+                                           rdfs:range <https://w3id.org/secure-chain/HardwareVersion> ;
+                                           rdfs:comment """
             Indicates that a particular version of software operates on a particular version of hardware.
         """ .
 
 
-###  https://w3id.org/secure-chain#dependsOn
-:dependsOn rdf:type owl:ObjectProperty ;
-           rdfs:domain :SoftwareVersion ;
-           rdfs:range :SoftwareVersion ;
-           rdfs:comment """
+###  https://w3id.org/secure-chain/dependsOn
+<https://w3id.org/secure-chain/dependsOn> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://w3id.org/secure-chain/SoftwareVersion> ;
+                                          rdfs:range <https://w3id.org/secure-chain/SoftwareVersion> ;
+                                          rdfs:comment """
             Indicates a dependency relationship between two software versions.
         """ .
 
 
-###  https://w3id.org/secure-chain#discover
-:discover rdf:type owl:ObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( <http://schema.org/Organization>
-                                      <http://schema.org/Person>
-                                    )
-                      ] ;
-          rdfs:range :Vulnerability ;
-          rdfs:comment """
+###  https://w3id.org/secure-chain/discover
+<https://w3id.org/secure-chain/discover> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <http://schema.org/Organization>
+                                                                     <http://schema.org/Person>
+                                                                   )
+                                                     ] ;
+                                         rdfs:range <https://w3id.org/secure-chain/Vulnerability> ;
+                                         rdfs:comment """
             Indicates that a person or organization has discovered a vulnerability in a software or hardware component.
         """ .
 
 
-###  https://w3id.org/secure-chain#hasHardwareVersion
-:hasHardwareVersion rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Hardware ;
-                    rdfs:range :HardwareVersion ;
-                    rdfs:comment """
+###  https://w3id.org/secure-chain/hasHardwareVersion
+<https://w3id.org/secure-chain/hasHardwareVersion> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://w3id.org/secure-chain/Hardware> ;
+                                                   rdfs:range <https://w3id.org/secure-chain/HardwareVersion> ;
+                                                   rdfs:comment """
             Indicates the relationship between a hardware product and its version.
         """ .
 
 
-###  https://w3id.org/secure-chain#hasSoftwareVersion
-:hasSoftwareVersion rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Software ;
-                    rdfs:range :SoftwareVersion ;
-                    rdfs:comment """
+###  https://w3id.org/secure-chain/hasSoftwareVersion
+<https://w3id.org/secure-chain/hasSoftwareVersion> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <https://w3id.org/secure-chain/Software> ;
+                                                   rdfs:range <https://w3id.org/secure-chain/SoftwareVersion> ;
+                                                   rdfs:comment """
             Indicates the relationship between a software product and its version.
         """ .
 
 
-###  https://w3id.org/secure-chain#versionName
-:versionName rdf:type owl:ObjectProperty ;
-             rdfs:domain :SoftwareVersion ;
-             rdfs:range <xsd:string> .
+###  https://w3id.org/secure-chain/versionName
+<https://w3id.org/secure-chain/versionName> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain [ rdf:type owl:Class ;
+                                                          owl:unionOf ( <https://w3id.org/secure-chain/HardwareVersion>
+                                                                        <https://w3id.org/secure-chain/SoftwareVersion>
+                                                                      )
+                                                        ] ;
+                                            rdfs:range <xsd:string> .
 
 
-###  https://w3id.org/secure-chain#vulnerabilityType
-:vulnerabilityType rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Vulnerability ;
-                   rdfs:range :VulnerabilityType ;
-                   rdfs:comment """
+###  https://w3id.org/secure-chain/vulnerabilityType
+<https://w3id.org/secure-chain/vulnerabilityType> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <https://w3id.org/secure-chain/Vulnerability> ;
+                                                  rdfs:range <https://w3id.org/secure-chain/VulnerabilityType> ;
+                                                  rdfs:comment """
             Associates a vulnerability with its specific type or classification.
         """ .
 
 
-###  https://w3id.org/secure-chain#vulnerableTo
-:vulnerableTo rdf:type owl:ObjectProperty ;
-              rdfs:domain :SoftwareVersion ;
-              rdfs:range :Vulnerability ;
-              rdfs:comment """
+###  https://w3id.org/secure-chain/vulnerableTo
+<https://w3id.org/secure-chain/vulnerableTo> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/secure-chain/SoftwareVersion> ;
+                                             rdfs:range <https://w3id.org/secure-chain/Vulnerability> ;
+                                             rdfs:comment """
             Indicates that a particular version of software is vulnerable to a specific vulnerability.
         """ .
 
@@ -305,9 +309,9 @@ xsd:date rdf:type rdfs:Datatype .
 <http://schema.org/version> rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/secure-chain#versionName
-:versionName rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf <http://schema.org/version> .
+###  https://w3id.org/secure-chain/versionName
+<https://w3id.org/secure-chain/versionName> rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf <http://schema.org/version> .
 
 
 #################################################################
@@ -342,67 +346,67 @@ xsd:date rdf:type rdfs:Datatype .
 <http://schema.org/Thing> rdf:type owl:Class .
 
 
-###  https://w3id.org/secure-chain#Hardware
-:Hardware rdf:type owl:Class ;
-          rdfs:subClassOf <http://schema.org/Product> ;
-          rdfs:comment """
+###  https://w3id.org/secure-chain/Hardware
+<https://w3id.org/secure-chain/Hardware> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://schema.org/Product> ;
+                                         rdfs:comment """
             Represents hardware products that are part of a secure supply chain.
         """ ;
-          rdfs:label "Hardware" .
+                                         rdfs:label "Hardware" .
 
 
-###  https://w3id.org/secure-chain#HardwareVersion
-:HardwareVersion rdf:type owl:Class ;
-                 rdfs:subClassOf :Hardware ;
-                 rdfs:comment """
+###  https://w3id.org/secure-chain/HardwareVersion
+<https://w3id.org/secure-chain/HardwareVersion> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/secure-chain/Hardware> ;
+                                                rdfs:comment """
             Represents a specific version of a hardware product within the secure chain.
         """ ;
-                 rdfs:label "Hardware Version" .
+                                                rdfs:label "Hardware Version" .
 
 
-###  https://w3id.org/secure-chain#License
-:License rdf:type owl:Class ;
-         rdfs:subClassOf <http://schema.org/CreativeWork> ;
-         rdfs:comment """
+###  https://w3id.org/secure-chain/License
+<https://w3id.org/secure-chain/License> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://schema.org/CreativeWork> ;
+                                        rdfs:comment """
             Represents licenses associated with software or hardware products in the secure supply chain.
         """ ;
-         rdfs:label "License" .
+                                        rdfs:label "License" .
 
 
-###  https://w3id.org/secure-chain#Software
-:Software rdf:type owl:Class ;
-          rdfs:subClassOf <http://schema.org/SoftwareApplication> ;
-          rdfs:comment """
+###  https://w3id.org/secure-chain/Software
+<https://w3id.org/secure-chain/Software> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://schema.org/SoftwareApplication> ;
+                                         rdfs:comment """
             Represents software applications that are part of a secure supply chain.
         """ ;
-          rdfs:label "Software" .
+                                         rdfs:label "Software" .
 
 
-###  https://w3id.org/secure-chain#SoftwareVersion
-:SoftwareVersion rdf:type owl:Class ;
-                 rdfs:subClassOf :Software ;
-                 rdfs:comment """
+###  https://w3id.org/secure-chain/SoftwareVersion
+<https://w3id.org/secure-chain/SoftwareVersion> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/secure-chain/Software> ;
+                                                rdfs:comment """
             Represents a specific version of a software application within the secure chain.
         """ ;
-                 rdfs:label "Software Version" .
+                                                rdfs:label "Software Version" .
 
 
-###  https://w3id.org/secure-chain#Vulnerability
-:Vulnerability rdf:type owl:Class ;
-               rdfs:subClassOf <http://schema.org/Intangible> ;
-               rdfs:comment """
+###  https://w3id.org/secure-chain/Vulnerability
+<https://w3id.org/secure-chain/Vulnerability> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://schema.org/Intangible> ;
+                                              rdfs:comment """
             Represents vulnerabilities that may affect software or hardware components in the secure supply chain.
         """ ;
-               rdfs:label "Vulnerability" .
+                                              rdfs:label "Vulnerability" .
 
 
-###  https://w3id.org/secure-chain#VulnerabilityType
-:VulnerabilityType rdf:type owl:Class ;
-                   rdfs:subClassOf <http://schema.org/Intangible> ;
-                   rdfs:comment """
+###  https://w3id.org/secure-chain/VulnerabilityType
+<https://w3id.org/secure-chain/VulnerabilityType> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://schema.org/Intangible> ;
+                                                  rdfs:comment """
             Represents types or classifications of vulnerabilities affecting secure supply chains.
         """ ;
-                   rdfs:label "Vulnerability Type" .
+                                                  rdfs:label "Vulnerability Type" .
 
 
 ###  xsd:anyURI
@@ -462,7 +466,7 @@ xsd:date rdf:type rdfs:Datatype .
         """ .
 
 
-:versionName rdfs:comment """
+<https://w3id.org/secure-chain/versionName> rdfs:comment """
             Represents the version name of a software or hardware product.
         """ .
 
