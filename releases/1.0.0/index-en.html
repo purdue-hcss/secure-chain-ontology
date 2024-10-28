@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/secure-chain","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/secure-chain","name":"Secure Chain Ontology", "headline":"The Secure Chain Knowledge Graph is a comprehensive knowledge graph designed to model the relationships between software, hardware, vulnerabilities, and other entities to support secure and transparent management of software supply chains.", "dateReleased":"2024-10-20", "version":"1.0.0", "license":"https://opensource.org/license/mit/", "author":[{"@type":"Person","name":"Yifeng Di"},{"@type":"Person","name":"Tianyi Zhang"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/secure-chain","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/secure-chain","name":"Secure Chain Ontology", "headline":"The Secure Chain Knowledge Graph is a comprehensive knowledge graph designed to model the relationships between software, hardware, vulnerabilities, and other entities to support secure and transparent management of software supply chains.", "dateReleased":"2024-10-20", "version":"1.0.0", "license":"https://opensource.org/license/mit/", "author":[{"@type":"Person","name":"Yifeng Di"},{"@type":"Person","name":"Hadi Askari"},{"@type":"Person","name":"Shushan Arakelyan"},{"@type":"Person","name":"Xiangyu Zhang"},{"@type":"Person","name":"Xiang Ren"},{"@type":"Person","name":"Muhao Chen"},{"@type":"Person","name":"Tianyi Zhang"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -77,7 +77,7 @@ $(function(){
 <dt>Revision:</dt>
 <dd>1.0.0</dd>
 <dt>Authors:</dt>
-<dd>Yifeng Di</dd><dd>Tianyi Zhang</dd>
+<dd>Yifeng Di</dd><dd>Hadi Askari</dd><dd>Shushan Arakelyan</dd><dd>Xiangyu Zhang</dd><dd>Xiang Ren</dd><dd>Muhao Chen</dd><dd>Tianyi Zhang</dd>
 
 <dt>Extended Ontologies:</dt>
 <dd><a href="http://schema.org/">Schema.org</a></dd>
@@ -85,14 +85,14 @@ $(function(){
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://opensource.org/license/mit/" target="_blank"><img src="https://img.shields.io/badge/License-https://opensource.org/license/mit/-blue.svg" alt="https://opensource.org/license/mit/" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Yifeng Di, Tianyi Zhang. Secure Chain Ontology. Revision: 1.0.0. Retrieved from: https://w3id.org/secure-chain/1.0.0</dd>
+<dd>Yifeng Di, Hadi Askari, Shushan Arakelyan, Xiangyu Zhang, Xiang Ren, Muhao Chen, Tianyi Zhang. Secure Chain Ontology. Revision: 1.0.0. Retrieved from: https://w3id.org/secure-chain/1.0.0</dd>
 </dl>
 
 <hr/>
 </div>
 <div class="status">
 <div>
-<span>Ontology Specification Draft</span>
+<span>Ontology Release</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 The Secure Chain Knowledge Graph is a comprehensive knowledge graph designed to model the relationships between software, hardware, vulnerabilities, and other entities to support secure and transparent management of software supply chains.</span>
@@ -108,7 +108,7 @@ While software supply chains empower the rapid development of software systems, 
 
 Therefore, the Secure Chain Ontology is designed to provide a unified knowledge graph ontology that can capture rich, up-to-date information about software components in heterogenous software ecosystems. By extending widely adopted ontologies such as [Schema.org](http://schema.org/) and incorporating principles from software description vocabularies, the Secure Chain Ontology facilitates interoperability with existing data sources and standards, making it a powerful tool for security professionals, developers, and researchers.
 
-The ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.         
+The ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.
         </span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
@@ -297,11 +297,11 @@ This ontology has the following classes and properties.</span>
 The Secure Chain Ontology builds on top of [Schema.org](http://schema.org/), as shown in the figure below, extending its vocabulary to seamlessly integrate with its metadata properties and enhance interoperability across various systems.
 
 We use sc:Software as a central concept in the Secure Chain Ontology to represent software within secure supply chains, with associated sc:SoftwareVersions capturing the evolution of software over time. These versions are critical for tracking vulnerabilities, compliance, and updates. The ontology models dependencies between software versions and other components, such as hardware, through properties like sc:dependsOn and sc:OperatesOn, which help assess potential risks and identify vulnerabilities. Additionally, sc:License links each software version to its legal aspects, ensuring compliance across the supply chain. The ontology also extends to hardware through sc:Hardware and sc:HardwareVersions, allowing for comprehensive tracking of both digital and physical components. Vulnerabilities are represented through sc:Vulnerability and sc:VulnerabilityType, with links to the entities that discover them, providing a detailed view of security risks across software and hardware versions.
-        </span>
-        
-        <div style="width: 100%; height: 100%; overflow: hidden;">
-            <img src="assets/taxonomy.png" style="width: 50%; height: auto;">
-        </div>   
+</span>
+
+<div style="width: 100%; height: 100%; overflow: hidden;">
+  <img src="assets/taxonomy.png" style="width: 67%; height: auto;">
+</div>
     </div>
    
 

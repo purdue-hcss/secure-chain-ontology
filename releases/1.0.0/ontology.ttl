@@ -9,7 +9,7 @@
 <https://w3id.org/secure-chain> rdf:type owl:Ontology ;
                                  owl:versionIRI <https://w3id.org/secure-chain/1.0.0> ;
                                  <http://purl.org/dc/elements/1.1/abstract> "The Secure Chain Knowledge Graph is a comprehensive knowledge graph designed to model the relationships between software, hardware, vulnerabilities, and other entities to support secure and transparent management of software supply chains." ;
-                                 <http://purl.org/dc/elements/1.1/creator> "Yifeng Di, Tianyi Zhang" ;
+                                 <http://purl.org/dc/elements/1.1/creator> "Yifeng Di, Hadi Askari, Shushan Arakelyan, Xiangyu Zhang, Xiang Ren, Muhao Chen, Tianyi Zhang" ;
                                  <http://purl.org/dc/elements/1.1/description> """
 The Secure Chain Ontology builds on top of [Schema.org](http://schema.org/), as shown in the figure below, extending its vocabulary to seamlessly integrate with its metadata properties and enhance interoperability across various systems.
 
@@ -30,7 +30,7 @@ While software supply chains empower the rapid development of software systems, 
 
 Therefore, the Secure Chain Ontology is designed to provide a unified knowledge graph ontology that can capture rich, up-to-date information about software components in heterogenous software ecosystems. By extending widely adopted ontologies such as [Schema.org](http://schema.org/) and incorporating principles from software description vocabularies, the Secure Chain Ontology facilitates interoperability with existing data sources and standards, making it a powerful tool for security professionals, developers, and researchers.
 
-The ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.         
+The ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.
         """ .
 
 #################################################################

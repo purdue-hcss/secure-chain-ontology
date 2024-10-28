@@ -8,7 +8,7 @@
     },
     "iri" : "https://w3id.org/secure-chain",
     "version" : "1.0.0",
-    "author" : [ "Yifeng Di, Tianyi Zhang" ],
+    "author" : [ "Yifeng Di, Hadi Askari, Shushan Arakelyan, Xiangyu Zhang, Xiang Ren, Muhao Chen, Tianyi Zhang" ],
     "description" : {
       "undefined" : "\nThe Secure Chain Ontology builds on top of [Schema.org](http://schema.org/), as shown in the figure below, extending its vocabulary to seamlessly integrate with its metadata properties and enhance interoperability across various systems.\n\nWe use sc:Software as a central concept in the Secure Chain Ontology to represent software within secure supply chains, with associated sc:SoftwareVersions capturing the evolution of software over time. These versions are critical for tracking vulnerabilities, compliance, and updates. The ontology models dependencies between software versions and other components, such as hardware, through properties like sc:dependsOn and sc:OperatesOn, which help assess potential risks and identify vulnerabilities. Additionally, sc:License links each software version to its legal aspects, ensuring compliance across the supply chain. The ontology also extends to hardware through sc:Hardware and sc:HardwareVersions, allowing for comprehensive tracking of both digital and physical components. Vulnerabilities are represented through sc:Vulnerability and sc:VulnerabilityType, with links to the entities that discover them, providing a detailed view of security risks across software and hardware versions.\n        "
     },
@@ -25,7 +25,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Yifeng Di, Tianyi Zhang",
+        "value" : "Yifeng Di, Hadi Askari, Shushan Arakelyan, Xiangyu Zhang, Xiang Ren, Muhao Chen, Tianyi Zhang",
         "type" : "label"
       } ],
       "extends" : [ {
@@ -73,71 +73,65 @@
       "introduction" : [ {
         "identifier" : "introduction",
         "language" : "undefined",
-        "value" : "\nIn today's increasingly complex technological ecosystem, software has become an integral part of crucial infrastructures. Underlying modern software systems is the supply chain of open-source software components, such as Apache Spark, whose functionalities are reused and integrated into various systems underpinning modern society.\n\nWhile software supply chains empower the rapid development of software systems, they also increase the risks, since any bugs, vulnerabilities, and unauthorized changes in upstream components can propagate to downstream systems and cause severe consequences. This is evident through many software crises witnessed in recent years, such as the [Heartbleed bug](https://heartbleed.com/), the [Equifax data breach](https://www.securityweek.com/equifax-confirms-apache-struts-flaw-used-hack/#:~:text=U.S.%20credit%20reporting%20agency%20Equifax,used%20to%20breach%20its%20systems.), and the [NPM left-pad incident](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code) that almost broke the Internet.\n\nTherefore, the Secure Chain Ontology is designed to provide a unified knowledge graph ontology that can capture rich, up-to-date information about software components in heterogenous software ecosystems. By extending widely adopted ontologies such as [Schema.org](http://schema.org/) and incorporating principles from software description vocabularies, the Secure Chain Ontology facilitates interoperability with existing data sources and standards, making it a powerful tool for security professionals, developers, and researchers.\n\nThe ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.         \n        ",
+        "value" : "\nIn today's increasingly complex technological ecosystem, software has become an integral part of crucial infrastructures. Underlying modern software systems is the supply chain of open-source software components, such as Apache Spark, whose functionalities are reused and integrated into various systems underpinning modern society.\n\nWhile software supply chains empower the rapid development of software systems, they also increase the risks, since any bugs, vulnerabilities, and unauthorized changes in upstream components can propagate to downstream systems and cause severe consequences. This is evident through many software crises witnessed in recent years, such as the [Heartbleed bug](https://heartbleed.com/), the [Equifax data breach](https://www.securityweek.com/equifax-confirms-apache-struts-flaw-used-hack/#:~:text=U.S.%20credit%20reporting%20agency%20Equifax,used%20to%20breach%20its%20systems.), and the [NPM left-pad incident](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code) that almost broke the Internet.\n\nTherefore, the Secure Chain Ontology is designed to provide a unified knowledge graph ontology that can capture rich, up-to-date information about software components in heterogenous software ecosystems. By extending widely adopted ontologies such as [Schema.org](http://schema.org/) and incorporating principles from software description vocabularies, the Secure Chain Ontology facilitates interoperability with existing data sources and standards, making it a powerful tool for security professionals, developers, and researchers.\n\nThe ontology supports key use cases such as risk analysis, secure software development lifecycle management, and compliance monitoring, by allowing users to trace dependencies between software and hardware components, identify which versions are affected by certain vulnerabilities, and ensure that all components in the chain are properly licensed. Additionally, the Secure Chain Ontology supports concepts such as vulnerability types and discovery, allowing for more detailed and actionable information when assessing the security posture of a system. As part of its design, the ontology aims to be flexible and extendable, enabling integration with domain-specific ontologies or other metadata vocabularies that may exist in different areas of the supply chain ecosystem.\n        ",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
     "type" : "owl:Class"
   }, {
     "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "32",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "11",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "33",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:unionOf"
   }, {
-    "id" : "10",
+    "id" : "25",
     "type" : "owl:Thing"
   }, {
-    "id" : "17",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "20",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -148,12 +142,12 @@
       "IRI-based" : "Hardware",
       "undefined" : "Hardware"
     },
-    "subClasses" : [ "2" ],
+    "subClasses" : [ "5" ],
     "comment" : {
       "undefined" : "\n            Represents hardware products that are part of a secure supply chain.\n        "
     },
-    "id" : "0",
-    "superClasses" : [ "1" ]
+    "id" : "3",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://schema.org/Person",
     "baseIri" : "http://schema.org",
@@ -174,8 +168,8 @@
     "comment" : {
       "undefined" : "\n            Represents types or classifications of vulnerabilities affecting secure supply chains.\n        "
     },
-    "id" : "5",
-    "superClasses" : [ "17" ]
+    "id" : "2",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://schema.org/Organization",
     "baseIri" : "http://schema.org",
@@ -184,7 +178,7 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "19"
+    "id" : "14"
   }, {
     "iri" : "http://schema.org/CreativeWork",
     "baseIri" : "http://schema.org",
@@ -192,9 +186,9 @@
     "label" : {
       "IRI-based" : "CreativeWork"
     },
-    "subClasses" : [ "23" ],
+    "subClasses" : [ "18" ],
     "attributes" : [ "external" ],
-    "id" : "22"
+    "id" : "17"
   }, {
     "iri" : "http://schema.org/SoftwareApplication",
     "baseIri" : "http://schema.org",
@@ -202,33 +196,19 @@
     "label" : {
       "IRI-based" : "SoftwareApplication"
     },
-    "subClasses" : [ "24" ],
+    "subClasses" : [ "20" ],
     "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "19"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "31",
+    "id" : "26",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "32",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "11",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "33",
+    "id" : "27",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -244,8 +224,8 @@
     "comment" : {
       "undefined" : "\n            Represents vulnerabilities that may affect software or hardware components in the secure supply chain.\n        "
     },
-    "id" : "4",
-    "superClasses" : [ "17" ]
+    "id" : "1",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/secure-chain#SoftwareVersion",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -257,17 +237,17 @@
     "comment" : {
       "undefined" : "\n            Represents a specific version of a software application within the secure chain.\n        "
     },
-    "id" : "15",
-    "superClasses" : [ "24" ]
+    "id" : "10",
+    "superClasses" : [ "20" ]
   }, {
     "instances" : 0,
-    "union" : [ "19", "6" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "14", "6" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "8"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "10",
+    "id" : "25",
     "label" : {
       "undefined" : "Thing"
     }
@@ -278,9 +258,9 @@
     "label" : {
       "IRI-based" : "Intangible"
     },
-    "subClasses" : [ "5", "4" ],
+    "subClasses" : [ "2", "1" ],
     "attributes" : [ "external" ],
-    "id" : "17"
+    "id" : "12"
   }, {
     "iri" : "http://schema.org/Product",
     "baseIri" : "http://schema.org",
@@ -288,9 +268,9 @@
     "label" : {
       "IRI-based" : "Product"
     },
-    "subClasses" : [ "0" ],
+    "subClasses" : [ "3" ],
     "attributes" : [ "external" ],
-    "id" : "1"
+    "id" : "4"
   }, {
     "iri" : "https://w3id.org/secure-chain#HardwareVersion",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -302,8 +282,8 @@
     "comment" : {
       "undefined" : "\n            Represents a specific version of a hardware product within the secure chain.\n        "
     },
-    "id" : "2",
-    "superClasses" : [ "0" ]
+    "id" : "5",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "http://schema.org/Thing",
     "baseIri" : "http://schema.org",
@@ -312,7 +292,7 @@
       "IRI-based" : "Thing"
     },
     "attributes" : [ "external" ],
-    "id" : "42"
+    "id" : "38"
   }, {
     "iri" : "https://w3id.org/secure-chain#License",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -324,8 +304,8 @@
     "comment" : {
       "undefined" : "\n            Represents licenses associated with software or hardware products in the secure supply chain.\n        "
     },
-    "id" : "23",
-    "superClasses" : [ "22" ]
+    "id" : "18",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/secure-chain#Software",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -334,97 +314,91 @@
       "IRI-based" : "Software",
       "undefined" : "Software"
     },
-    "subClasses" : [ "15" ],
+    "subClasses" : [ "10" ],
     "comment" : {
       "undefined" : "\n            Represents software applications that are part of a secure supply chain.\n        "
     },
-    "id" : "24",
-    "superClasses" : [ "13" ]
+    "id" : "20",
+    "superClasses" : [ "19" ]
   } ],
   "property" : [ {
-    "id" : "3",
+    "id" : "0",
     "type" : "owl:objectProperty"
   }, {
     "id" : "7",
     "type" : "owl:objectProperty"
   }, {
     "id" : "9",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "14",
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "18",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "20",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "25",
-    "type" : "rdfs:SubClassOf"
+    "id" : "23",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "27",
-    "type" : "rdfs:SubClassOf"
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "28",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "29",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "30",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "35",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "36",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "37",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "38",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "39",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "41",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "https://w3id.org/secure-chain#vulnerabilityType",
     "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "5",
+    "range" : "2",
     "label" : {
       "IRI-based" : "vulnerabilityType"
     },
-    "domain" : "4",
+    "domain" : "1",
     "comment" : {
       "undefined" : "\n            Associates a vulnerability with its specific type or classification.\n        "
     },
     "attributes" : [ "object" ],
-    "id" : "3"
+    "id" : "0"
   }, {
     "iri" : "https://w3id.org/secure-chain#discover",
     "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "4",
+    "range" : "1",
     "label" : {
       "IRI-based" : "discover"
     },
@@ -435,74 +409,61 @@
     "attributes" : [ "object" ],
     "id" : "7"
   }, {
-    "iri" : "http://schema.org/givenName",
-    "baseIri" : "http://schema.org",
-    "range" : "11",
-    "label" : {
-      "IRI-based" : "givenName"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "\n            Represents the given name (first name) of a person.\n        "
-    },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "9"
-  }, {
     "iri" : "https://w3id.org/secure-chain#vulnerableTo",
     "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "4",
+    "range" : "1",
     "label" : {
       "IRI-based" : "vulnerableTo"
     },
-    "domain" : "15",
+    "domain" : "10",
     "comment" : {
       "undefined" : "\n            Indicates that a particular version of software is vulnerable to a specific vulnerability.\n        "
     },
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "9"
   }, {
     "iri" : "https://w3id.org/secure-chain#OperatesOn",
     "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "2",
+    "range" : "5",
     "label" : {
       "IRI-based" : "OperatesOn"
     },
-    "domain" : "15",
+    "domain" : "10",
     "comment" : {
       "undefined" : "\n            Indicates that a particular version of software operates on a particular version of hardware.\n        "
     },
     "attributes" : [ "object" ],
-    "id" : "16"
+    "id" : "11"
   }, {
     "iri" : "http://schema.org/manufacturer",
     "baseIri" : "http://schema.org",
-    "range" : "19",
+    "range" : "14",
     "label" : {
       "IRI-based" : "manufacturer"
     },
-    "domain" : "1",
+    "domain" : "4",
     "comment" : {
       "undefined" : "\n            Indicates the organization responsible for manufacturing a product, such as hardware.\n        "
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "18"
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
   }, {
     "iri" : "https://w3id.org/secure-chain#hasHardwareVersion",
     "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "2",
+    "range" : "5",
     "label" : {
       "IRI-based" : "hasHardwareVersion"
     },
-    "domain" : "0",
+    "domain" : "3",
     "comment" : {
       "undefined" : "\n            Indicates the relationship between a hardware product and its version.\n        "
     },
     "attributes" : [ "object" ],
-    "id" : "20"
+    "id" : "15"
   }, {
     "iri" : "http://schema.org/affiliation",
     "baseIri" : "http://schema.org",
-    "range" : "19",
+    "range" : "14",
     "label" : {
       "IRI-based" : "affiliation"
     },
@@ -510,108 +471,95 @@
     "comment" : {
       "undefined" : "\n            Indicates an individual's affiliation with an organization.\n        "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "20",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "21"
-  }, {
-    "range" : "22",
-    "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "25"
-  }, {
-    "range" : "24",
-    "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "26"
-  }, {
-    "range" : "13",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "27"
   }, {
     "iri" : "http://schema.org/producer",
     "baseIri" : "http://schema.org",
-    "range" : "19",
+    "range" : "14",
     "label" : {
       "IRI-based" : "producer"
     },
-    "domain" : "22",
+    "domain" : "17",
     "comment" : {
       "undefined" : "\n            Indictes tahe organization that produced a creative work, such as a software application.\n        "
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "28"
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
   }, {
     "iri" : "https://w3id.org/secure-chain#hasSoftwareVersion",
     "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "15",
+    "range" : "10",
     "label" : {
       "IRI-based" : "hasSoftwareVersion"
     },
-    "domain" : "24",
+    "domain" : "20",
     "comment" : {
       "undefined" : "\n            Indicates the relationship between a software product and its version.\n        "
     },
     "attributes" : [ "object" ],
-    "id" : "29"
+    "id" : "23"
   }, {
     "iri" : "http://schema.org/url",
     "baseIri" : "http://schema.org",
-    "range" : "31",
+    "range" : "26",
     "label" : {
       "IRI-based" : "url"
     },
-    "domain" : "10",
+    "domain" : "25",
     "comment" : {
       "undefined" : "\n            Represents the URL of any resource in the ontology.\n        "
     },
     "attributes" : [ "external", "datatype" ],
+    "id" : "24"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "12",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
-    "range" : "0",
-    "domain" : "2",
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "17",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "19",
+    "domain" : "20",
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
-    "iri" : "https://w3id.org/secure-chain#versionName",
-    "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "versionName"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "\n            Represents the version name of a software or hardware product.\n        "
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "35"
-  }, {
-    "range" : "17",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "36"
-  }, {
-    "range" : "17",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "37"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "38"
-  }, {
     "iri" : "https://w3id.org/secure-chain#dependsOn",
     "baseIri" : "https://w3id.org/secure-chain",
-    "range" : "15",
+    "range" : "10",
     "label" : {
       "IRI-based" : "dependsOn"
     },
-    "domain" : "15",
+    "domain" : "10",
     "comment" : {
       "undefined" : "\n            Indicates a dependency relationship between two software versions.\n        "
     },
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "35"
   }, {
     "iri" : "http://schema.org/contributor",
     "baseIri" : "http://schema.org",
@@ -619,24 +567,24 @@
     "label" : {
       "IRI-based" : "contributor"
     },
-    "domain" : "22",
+    "domain" : "17",
     "comment" : {
       "undefined" : "\n            Indicates the person who contributed to a creative work, such as a software application.\n        "
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "40"
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
   }, {
     "iri" : "http://schema.org/license",
     "baseIri" : "http://schema.org",
-    "range" : "22",
+    "range" : "17",
     "label" : {
       "IRI-based" : "license"
     },
-    "domain" : "22",
+    "domain" : "17",
     "comment" : {
       "undefined" : "\n            Associates a creative work, such as software, with its license.\n        "
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "41"
+    "attributes" : [ "external", "object" ],
+    "id" : "37"
   } ]
 }
