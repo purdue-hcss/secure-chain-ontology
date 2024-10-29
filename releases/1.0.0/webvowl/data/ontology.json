@@ -80,49 +80,196 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "8",
     "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://schema.org/Product",
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/secure-chain/Hardware",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hardware",
+      "undefined" : "Hardware"
+    },
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "undefined" : "\n            Represents hardware products that are part of a secure supply chain.\n        "
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/secure-chain/HardwareVersion",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HardwareVersion",
+      "undefined" : "Hardware Version"
+    },
+    "comment" : {
+      "undefined" : "\n            Represents a specific version of a hardware product within the secure chain.\n        "
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://schema.org/CreativeWork",
     "baseIri" : "http://schema.org",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Product"
+      "IRI-based" : "CreativeWork"
     },
-    "subClasses" : [ "1" ],
+    "subClasses" : [ "25" ],
     "attributes" : [ "external" ],
-    "id" : "0"
+    "id" : "24"
+  }, {
+    "iri" : "http://schema.org/SoftwareApplication",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SoftwareApplication"
+    },
+    "subClasses" : [ "33" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "https://w3id.org/secure-chain/Vulnerability",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -136,7 +283,101 @@
     },
     "attributes" : [ "external" ],
     "id" : "2",
-    "superClasses" : [ "3" ]
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "19", "3" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "1"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://schema.org/Intangible",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intangible"
+    },
+    "subClasses" : [ "2", "30" ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://schema.org/Product",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
   }, {
     "iri" : "https://w3id.org/secure-chain/VulnerabilityType",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -149,8 +390,8 @@
       "undefined" : "\n            Represents types or classifications of vulnerabilities affecting secure supply chains.\n        "
     },
     "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "3" ]
+    "id" : "30",
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "https://w3id.org/secure-chain/Software",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -159,13 +400,13 @@
       "IRI-based" : "Software",
       "undefined" : "Software"
     },
-    "subClasses" : [ "13" ],
+    "subClasses" : [ "5" ],
     "comment" : {
       "undefined" : "\n            Represents software applications that are part of a secure supply chain.\n        "
     },
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "12" ]
+    "id" : "33",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "https://w3id.org/secure-chain/License",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -178,57 +419,8 @@
       "undefined" : "\n            Represents licenses associated with software or hardware products in the secure supply chain.\n        "
     },
     "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "9" ]
-  }, {
-    "iri" : "https://w3id.org/secure-chain/Hardware",
-    "baseIri" : "https://w3id.org/secure-chain",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Hardware",
-      "undefined" : "Hardware"
-    },
-    "subClasses" : [ "6" ],
-    "comment" : {
-      "undefined" : "\n            Represents hardware products that are part of a secure supply chain.\n        "
-    },
-    "attributes" : [ "external" ],
-    "id" : "1",
-    "superClasses" : [ "0" ]
-  }, {
-    "iri" : "http://schema.org/CreativeWork",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CreativeWork"
-    },
-    "subClasses" : [ "8" ],
-    "attributes" : [ "external" ],
-    "id" : "9"
-  }, {
-    "iri" : "https://w3id.org/secure-chain/HardwareVersion",
-    "baseIri" : "https://w3id.org/secure-chain",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "HardwareVersion",
-      "undefined" : "Hardware Version"
-    },
-    "comment" : {
-      "undefined" : "\n            Represents a specific version of a hardware product within the secure chain.\n        "
-    },
-    "attributes" : [ "external" ],
-    "id" : "6",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://schema.org/SoftwareApplication",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SoftwareApplication"
-    },
-    "subClasses" : [ "11" ],
-    "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "25",
+    "superClasses" : [ "24" ]
   }, {
     "iri" : "https://w3id.org/secure-chain/SoftwareVersion",
     "baseIri" : "https://w3id.org/secure-chain",
@@ -241,75 +433,487 @@
       "undefined" : "\n            Represents a specific version of a software application within the secure chain.\n        "
     },
     "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "11" ]
-  }, {
-    "iri" : "http://schema.org/Intangible",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Intangible"
-    },
-    "subClasses" : [ "2", "4" ],
-    "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "5",
+    "superClasses" : [ "33" ]
   } ],
   "property" : [ {
-    "id" : "5",
-    "type" : "rdfs:SubClassOf"
+    "id" : "0",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "7",
-    "type" : "rdfs:SubClassOf"
+    "id" : "4",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "10",
-    "type" : "rdfs:SubClassOf"
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "14",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "15",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "16",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
-    "range" : "1",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "5"
+    "iri" : "https://w3id.org/secure-chain/discover",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "discover"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "\n            Indicates that a person or organization has discovered a vulnerability in a software or hardware component.\n        "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
   }, {
-    "range" : "9",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "7"
+    "iri" : "https://w3id.org/secure-chain/vulnerableTo",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "vulnerableTo"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "\n            Indicates that a particular version of software is vulnerable to a specific vulnerability.\n        "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "4"
   }, {
-    "range" : "12",
-    "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "10"
+    "iri" : "http://schema.org/givenName",
+    "baseIri" : "http://schema.org",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "givenName"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "9"
   }, {
-    "range" : "3",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "http://schema.org/programmingLanguage",
+    "baseIri" : "http://schema.org",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "programmingLanguage"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://schema.org/identifier",
+    "baseIri" : "http://schema.org",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
     "id" : "14"
   }, {
-    "range" : "3",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "15"
-  }, {
-    "range" : "0",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "http://schema.org/manufacturer",
+    "baseIri" : "http://schema.org",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "manufacturer"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
     "id" : "16"
   }, {
-    "range" : "11",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://w3id.org/secure-chain/hasHardwareVersion",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasHardwareVersion"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "\n            Indicates the relationship between a hardware product and its version.\n        "
+    },
+    "attributes" : [ "object", "external" ],
     "id" : "17"
+  }, {
+    "iri" : "http://schema.org/affiliation",
+    "baseIri" : "http://schema.org",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "affiliation"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://schema.org/description",
+    "baseIri" : "http://schema.org",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://schema.org/codeRepository",
+    "baseIri" : "http://schema.org",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "codeRepository"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "26"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/secure-chain/hasSoftwareVersion",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasSoftwareVersion"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "\n            Indicates the relationship between a software product and its version.\n        "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "34"
+  }, {
+    "range" : "33",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "24",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/secure-chain/vulnerabilityType",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "vulnerabilityType"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "\n            Associates a vulnerability with its specific type or classification.\n        "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "37"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "31",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "32",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://schema.org/producer",
+    "baseIri" : "http://schema.org",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "producer"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://schema.org/url",
+    "baseIri" : "http://schema.org",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "url"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/secure-chain/operatesOn",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "operatesOn"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "\n            Indicates that a particular version of software operates on a particular version of hardware.\n        "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/secure-chain/dependsOn",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "dependsOn"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "\n            Indicates a dependency relationship between two software versions.\n        "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/secure-chain/versionName",
+    "baseIri" : "https://w3id.org/secure-chain",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "versionName"
+    },
+    "domain" : "50",
+    "comment" : {
+      "undefined" : "\n            Represents the version name of a software or hardware product.\n        "
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://schema.org/email",
+    "baseIri" : "http://schema.org",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "email"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://schema.org/contributor",
+    "baseIri" : "http://schema.org",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contributor"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://schema.org/license",
+    "baseIri" : "http://schema.org",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "license"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://schema.org/familyName",
+    "baseIri" : "http://schema.org",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "familyName"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "54"
   } ]
 }

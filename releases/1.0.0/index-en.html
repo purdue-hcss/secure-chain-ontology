@@ -128,7 +128,6 @@ The ontology supports key use cases such as risk analysis, secure software devel
 <tr><td><b>widoco</b></td><td>&lt;https://w3id.org/widoco/vocab#&gt;</td></tr>
 <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
-<tr><td><b>xsd1</b></td><td>&lt;xsd:&gt;</td></tr>
 </tbody>
 </table>
 </div>
@@ -154,7 +153,27 @@ This ontology has the following classes and properties.</span>
       <a href="#/License" title="https://w3id.org/secure-chain/License">License</a>
    </li>
    <li>
+      <a href="#http://schema.org/Organization" title="http://schema.org/Organization">
+         <span>Organization</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/Person" title="http://schema.org/Person">
+         <span>Person</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/Product" title="http://schema.org/Product">
+         <span>Product</span>
+      </a>
+   </li>
+   <li>
       <a href="#/Software" title="https://w3id.org/secure-chain/Software">Software</a>
+   </li>
+   <li>
+      <a href="#http://schema.org/SoftwareApplication" title="http://schema.org/SoftwareApplication">
+         <span>Software Application</span>
+      </a>
    </li>
    <li>
       <a href="#/SoftwareVersion" title="https://w3id.org/secure-chain/SoftwareVersion">Software Version</a>
@@ -174,11 +193,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://schema.org/codeRepository" title="http://schema.org/codeRepository">
-         <span>code Repository</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://schema.org/contributor" title="http://schema.org/contributor">
          <span>contributor</span>
       </a>
@@ -189,13 +203,61 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://schema.org/description" title="http://schema.org/description">
-         <span>description</span>
+      <a href="#/discover" title="https://w3id.org/secure-chain/discover">
+         <span>discover</span>
       </a>
    </li>
    <li>
-      <a href="#/discover" title="https://w3id.org/secure-chain/discover">
-         <span>discover</span>
+      <a href="#/hasHardwareVersion" title="https://w3id.org/secure-chain/hasHardwareVersion">
+         <span>has Hardware Version</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/hasSoftwareVersion" title="https://w3id.org/secure-chain/hasSoftwareVersion">
+         <span>has Software Version</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/license" title="http://schema.org/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/manufacturer" title="http://schema.org/manufacturer">
+         <span>manufacturer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/operatesOn" title="https://w3id.org/secure-chain/operatesOn">
+         <span>operates On</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/producer" title="http://schema.org/producer">
+         <span>producer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/vulnerabilityType" title="https://w3id.org/secure-chain/vulnerabilityType">
+         <span>vulnerability Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#/vulnerableTo" title="https://w3id.org/secure-chain/vulnerableTo">
+         <span>vulnerable To</span>
+      </a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://schema.org/codeRepository" title="http://schema.org/codeRepository">
+         <span>code Repository</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/description" title="http://schema.org/description">
+         <span>description</span>
       </a>
    </li>
    <li>
@@ -214,43 +276,13 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#/hasHardwareVersion" title="https://w3id.org/secure-chain/hasHardwareVersion">
-         <span>has Hardware Version</span>
-      </a>
-   </li>
-   <li>
-      <a href="#/hasSoftwareVersion" title="https://w3id.org/secure-chain/hasSoftwareVersion">
-         <span>has Software Version</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://schema.org/identifier" title="http://schema.org/identifier">
          <span>identifier</span>
       </a>
    </li>
    <li>
-      <a href="#http://schema.org/license" title="http://schema.org/license">
-         <span>license</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://schema.org/manufacturer" title="http://schema.org/manufacturer">
-         <span>manufacturer</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://schema.org/name" title="http://schema.org/name">
          <span>name</span>
-      </a>
-   </li>
-   <li>
-      <a href="#/OperatesOn" title="https://w3id.org/secure-chain/OperatesOn">
-         <span>Operates On</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://schema.org/producer" title="http://schema.org/producer">
-         <span>producer</span>
       </a>
    </li>
    <li>
@@ -268,24 +300,6 @@ This ontology has the following classes and properties.</span>
          <span>version Name</span>
       </a>
    </li>
-   <li>
-      <a href="#/vulnerabilityType" title="https://w3id.org/secure-chain/vulnerabilityType">
-         <span>vulnerability Type</span>
-      </a>
-   </li>
-   <li>
-      <a href="#/vulnerableTo" title="https://w3id.org/secure-chain/vulnerableTo">
-         <span>vulnerable To</span>
-      </a>
-   </li>
-</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    class="hlist">
-   <li>
-      <a href="#/versionName" title="https://w3id.org/secure-chain/versionName">
-         <span>version Name</span>
-      </a>
-   </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
   
@@ -297,12 +311,11 @@ This ontology has the following classes and properties.</span>
 The Secure Chain Ontology builds on top of [Schema.org](http://schema.org/), as shown in the figure below, extending its vocabulary to seamlessly integrate with its metadata properties and enhance interoperability across various systems.
 
 We use sc:Software as a central concept in the Secure Chain Ontology to represent software within secure supply chains, with associated sc:SoftwareVersions capturing the evolution of software over time. These versions are critical for tracking vulnerabilities, compliance, and updates. The ontology models dependencies between software versions and other components, such as hardware, through properties like sc:dependsOn and sc:OperatesOn, which help assess potential risks and identify vulnerabilities. Additionally, sc:License links each software version to its legal aspects, ensuring compliance across the supply chain. The ontology also extends to hardware through sc:Hardware and sc:HardwareVersions, allowing for comprehensive tracking of both digital and physical components. Vulnerabilities are represented through sc:Vulnerability and sc:VulnerabilityType, with links to the entities that discover them, providing a detailed view of security risks across software and hardware versions.
-</span>
+        </span>
 
 <div style="width: 100%; height: 100%; overflow: hidden;">
   <img src="assets/taxonomy.png" style="width: 67%; height: auto;">
 </div>
-
     </div>
    
 
@@ -315,7 +328,11 @@ This section provides details for each class and property defined by Secure Chai
   <li><a href="#/Hardware" title="https://w3id.org/secure-chain/Hardware">Hardware</a></li>
   <li><a href="#/HardwareVersion" title="https://w3id.org/secure-chain/HardwareVersion">Hardware Version</a></li>
   <li><a href="#/License" title="https://w3id.org/secure-chain/License">License</a></li>
+  <li><a href="#http://schema.org/Organization" title="http://schema.org/Organization"> <span>Organization</span> </a></li>
+  <li><a href="#http://schema.org/Person" title="http://schema.org/Person"> <span>Person</span> </a></li>
+  <li><a href="#http://schema.org/Product" title="http://schema.org/Product"> <span>Product</span> </a></li>
   <li><a href="#/Software" title="https://w3id.org/secure-chain/Software">Software</a></li>
+  <li><a href="#http://schema.org/SoftwareApplication" title="http://schema.org/SoftwareApplication"> <span>Software Application</span> </a></li>
   <li><a href="#/SoftwareVersion" title="https://w3id.org/secure-chain/SoftwareVersion">Software Version</a></li>
   <li><a href="#/Vulnerability" title="https://w3id.org/secure-chain/Vulnerability">Vulnerability</a></li>
   <li><a href="#/VulnerabilityType" title="https://w3id.org/secure-chain/VulnerabilityType">Vulnerability Type</a></li>
@@ -331,7 +348,7 @@ This section provides details for each class and property defined by Secure Chai
     has super-classes
    </dt>
    <dd>
-    <a href="http://schema.org/Product" target="_blank" title="http://schema.org/Product">Product</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://schema.org/Product" title="http://schema.org/Product">Product</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -364,13 +381,13 @@ This section provides details for each class and property defined by Secure Chai
     is in domain of
    </dt>
    <dd>
-    <a href="#/versionName" title="https://w3id.org/secure-chain/versionName">version Name</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#/versionName" title="https://w3id.org/secure-chain/versionName">version Name</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#/OperatesOn" title="https://w3id.org/secure-chain/OperatesOn">Operates On</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasHardwareVersion" title="https://w3id.org/secure-chain/hasHardwareVersion">has Hardware Version</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#/hasHardwareVersion" title="https://w3id.org/secure-chain/hasHardwareVersion">has Hardware Version</a> <sup class="type-op" title="object property">op</sup>, <a href="#/operatesOn" title="https://w3id.org/secure-chain/operatesOn">operates On</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -389,6 +406,66 @@ This section provides details for each class and property defined by Secure Chai
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://schema.org/Organization">
+  <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/Organization</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/discover" title="https://w3id.org/secure-chain/discover">discover</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/Person</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/discover" title="https://w3id.org/secure-chain/discover">discover</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/Product">
+  <h3>Product<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/Product</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/Hardware" title="https://w3id.org/secure-chain/Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="/Software">
   <h3>Software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/secure-chain/Software</p>
@@ -400,7 +477,7 @@ This section provides details for each class and property defined by Secure Chai
     has super-classes
    </dt>
    <dd>
-    <a href="http://schema.org/SoftwareApplication" target="_blank" title="http://schema.org/SoftwareApplication">Software Application</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://schema.org/SoftwareApplication" title="http://schema.org/SoftwareApplication">Software Application</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -413,6 +490,26 @@ This section provides details for each class and property defined by Secure Chai
    </dt>
    <dd>
     <a href="#/hasSoftwareVersion" title="https://w3id.org/secure-chain/hasSoftwareVersion">has Software Version</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/SoftwareApplication">
+  <h3>Software Application<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/SoftwareApplication</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/Software" title="https://w3id.org/secure-chain/Software">Software</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -433,7 +530,7 @@ This section provides details for each class and property defined by Secure Chai
     is in domain of
    </dt>
    <dd>
-    <a href="#/OperatesOn" title="https://w3id.org/secure-chain/OperatesOn">Operates On</a> <sup class="type-op" title="object property">op</sup>, <a href="#/dependsOn" title="https://w3id.org/secure-chain/dependsOn">depends On</a> <sup class="type-op" title="object property">op</sup>, <a href="#/versionName" title="https://w3id.org/secure-chain/versionName">version Name</a> <sup class="type-op" title="object property">op</sup>, <a href="#/vulnerableTo" title="https://w3id.org/secure-chain/vulnerableTo">vulnerable To</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#/dependsOn" title="https://w3id.org/secure-chain/dependsOn">depends On</a> <sup class="type-op" title="object property">op</sup>, <a href="#/operatesOn" title="https://w3id.org/secure-chain/operatesOn">operates On</a> <sup class="type-op" title="object property">op</sup>, <a href="#/versionName" title="https://w3id.org/secure-chain/versionName">version Name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#/vulnerableTo" title="https://w3id.org/secure-chain/vulnerableTo">vulnerable To</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -495,99 +592,41 @@ This section provides details for each class and property defined by Secure Chai
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#http://schema.org/affiliation" title="http://schema.org/affiliation"> <span>affiliation</span> </a></li>
-  <li><a href="#http://schema.org/codeRepository" title="http://schema.org/codeRepository"> <span>code Repository</span> </a></li>
   <li><a href="#http://schema.org/contributor" title="http://schema.org/contributor"> <span>contributor</span> </a></li>
   <li><a href="#/dependsOn" title="https://w3id.org/secure-chain/dependsOn"> <span>depends On</span> </a></li>
-  <li><a href="#http://schema.org/description" title="http://schema.org/description"> <span>description</span> </a></li>
   <li><a href="#/discover" title="https://w3id.org/secure-chain/discover"> <span>discover</span> </a></li>
-  <li><a href="#http://schema.org/email" title="http://schema.org/email"> <span>email</span> </a></li>
-  <li><a href="#http://schema.org/familyName" title="http://schema.org/familyName"> <span>family Name</span> </a></li>
-  <li><a href="#http://schema.org/givenName" title="http://schema.org/givenName"> <span>given Name</span> </a></li>
   <li><a href="#/hasHardwareVersion" title="https://w3id.org/secure-chain/hasHardwareVersion"> <span>has Hardware Version</span> </a></li>
   <li><a href="#/hasSoftwareVersion" title="https://w3id.org/secure-chain/hasSoftwareVersion"> <span>has Software Version</span> </a></li>
-  <li><a href="#http://schema.org/identifier" title="http://schema.org/identifier"> <span>identifier</span> </a></li>
   <li><a href="#http://schema.org/license" title="http://schema.org/license"> <span>license</span> </a></li>
   <li><a href="#http://schema.org/manufacturer" title="http://schema.org/manufacturer"> <span>manufacturer</span> </a></li>
-  <li><a href="#http://schema.org/name" title="http://schema.org/name"> <span>name</span> </a></li>
-  <li><a href="#/OperatesOn" title="https://w3id.org/secure-chain/OperatesOn"> <span>Operates On</span> </a></li>
+  <li><a href="#/operatesOn" title="https://w3id.org/secure-chain/operatesOn"> <span>operates On</span> </a></li>
   <li><a href="#http://schema.org/producer" title="http://schema.org/producer"> <span>producer</span> </a></li>
-  <li><a href="#http://schema.org/programmingLanguage" title="http://schema.org/programmingLanguage"> <span>programming Language</span> </a></li>
-  <li><a href="#http://schema.org/url" title="http://schema.org/url"> <span>url</span> </a></li>
-  <li><a href="#/versionName" title="https://w3id.org/secure-chain/versionName"> <span>version Name</span> </a></li>
   <li><a href="#/vulnerabilityType" title="https://w3id.org/secure-chain/vulnerabilityType"> <span>vulnerability Type</span> </a></li>
   <li><a href="#/vulnerableTo" title="https://w3id.org/secure-chain/vulnerableTo"> <span>vulnerable To</span> </a></li>
  </ul>
  <div class="entity" id="http://schema.org/affiliation">
   <h3>affiliation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/affiliation</p>
-  <div class="comment">
-   <span class="markdown"> Indicates an individual's affiliation with an organization. </span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Person" target="_blank" title="http://schema.org/Person">Person</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://schema.org/Organization" target="_blank" title="http://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://schema.org/codeRepository">
-  <h3>code Repository<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/codeRepository</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/SoftwareApplication" target="_blank" title="http://schema.org/SoftwareApplication">Software Application</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:anyURI" target="_blank" title="xsd:anyURI">xsd:anyURI</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="http://schema.org/contributor">
   <h3>contributor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/contributor</p>
-  <div class="comment">
-   <span class="markdown"> Indicates the person who contributed to a creative work, such as a software application. </span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/CreativeWork" target="_blank" title="http://schema.org/CreativeWork">Creative Work</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://schema.org/Person" target="_blank" title="http://schema.org/Person">Person</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="/dependsOn">
   <h3>depends On<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -612,32 +651,6 @@ This section provides details for each class and property defined by Secure Chai
    </dl>
   </div>
  </div>
- <div class="entity" id="http://schema.org/description">
-  <h3>description<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/description</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Thing" target="_blank" title="http://schema.org/Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="/discover">
   <h3>discover<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/secure-chain/discover</p>
@@ -650,91 +663,13 @@ This section provides details for each class and property defined by Secure Chai
      has domain
     </dt>
     <dd>
-     <a href="http://schema.org/Organization" target="_blank" title="http://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://schema.org/Person" target="_blank" title="http://schema.org/Person">Person</a> <sup class="type-c" title="class">c</sup>
+     <a href="#http://schema.org/Organization" title="http://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#http://schema.org/Person" title="http://schema.org/Person">Person</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
      <a href="#/Vulnerability" title="https://w3id.org/secure-chain/Vulnerability">Vulnerability</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://schema.org/email">
-  <h3>email<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/email</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Organization" target="_blank" title="http://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://schema.org/familyName">
-  <h3>family Name<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/familyName</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Person" target="_blank" title="http://schema.org/Person">Person</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://schema.org/givenName">
-  <h3>given Name<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/givenName</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Person" target="_blank" title="http://schema.org/Person">Person</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
     </dd>
    </dl>
   </div>
@@ -785,107 +720,33 @@ This section provides details for each class and property defined by Secure Chai
    </dl>
   </div>
  </div>
- <div class="entity" id="http://schema.org/identifier">
-  <h3>identifier<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/identifier</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Thing" target="_blank" title="http://schema.org/Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="http://schema.org/license">
   <h3>license<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/license</p>
-  <div class="comment">
-   <span class="markdown"> Associates a creative work, such as software, with its license. </span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/CreativeWork" target="_blank" title="http://schema.org/CreativeWork">Creative Work</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://schema.org/CreativeWork" target="_blank" title="http://schema.org/CreativeWork">Creative Work</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="http://schema.org/manufacturer">
   <h3>manufacturer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/manufacturer</p>
-  <div class="comment">
-   <span class="markdown"> Indicates the organization responsible for manufacturing a product, such as hardware. </span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Product" target="_blank" title="http://schema.org/Product">Product</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://schema.org/Organization" target="_blank" title="http://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
  </div>
- <div class="entity" id="http://schema.org/name">
-  <h3>name<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/name</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Thing" target="_blank" title="http://schema.org/Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="/OperatesOn">
-  <h3>Operates On<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/secure-chain/OperatesOn</p>
+ <div class="entity" id="/operatesOn">
+  <h3>operates On<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/secure-chain/operatesOn</p>
   <div class="comment">
    <span class="markdown"> Indicates that a particular version of software operates on a particular version of hardware. </span>
   </div>
@@ -909,103 +770,14 @@ This section provides details for each class and property defined by Secure Chai
  <div class="entity" id="http://schema.org/producer">
   <h3>producer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/producer</p>
-  <div class="comment">
-   <span class="markdown"> Indictes tahe organization that produced a creative work, such as a software application. </span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/CreativeWork" target="_blank" title="http://schema.org/CreativeWork">Creative Work</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://schema.org/Organization" target="_blank" title="http://schema.org/Organization">Organization</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://schema.org/programmingLanguage">
-  <h3>programming Language<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/programmingLanguage</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/SoftwareApplication" target="_blank" title="http://schema.org/SoftwareApplication">Software Application</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://schema.org/url">
-  <h3>url<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://schema.org/url</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://schema.org/Thing" target="_blank" title="http://schema.org/Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:anyURI" target="_blank" title="xsd:anyURI">xsd:anyURI</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     data property
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="/versionName">
-  <h3>version Name<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/secure-chain/versionName</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#/HardwareVersion" title="https://w3id.org/secure-chain/HardwareVersion">Hardware Version</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#/SoftwareVersion" title="https://w3id.org/secure-chain/SoftwareVersion">Software Version</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="xsd:string" target="_blank" title="xsd:string">xsd:string</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is also defined as
-    </dt>
-    <dd>
-     <a href="#/versionName">data property</a>
-    </dd>
-   </dl>
-  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
  </div>
  <div class="entity" id="/vulnerabilityType">
   <h3>vulnerability Type<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -1056,24 +828,144 @@ This section provides details for each class and property defined by Secure Chai
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
+  <li><a href="#http://schema.org/codeRepository" title="http://schema.org/codeRepository"> <span>code Repository</span> </a></li>
+  <li><a href="#http://schema.org/description" title="http://schema.org/description"> <span>description</span> </a></li>
+  <li><a href="#http://schema.org/email" title="http://schema.org/email"> <span>email</span> </a></li>
+  <li><a href="#http://schema.org/familyName" title="http://schema.org/familyName"> <span>family Name</span> </a></li>
+  <li><a href="#http://schema.org/givenName" title="http://schema.org/givenName"> <span>given Name</span> </a></li>
+  <li><a href="#http://schema.org/identifier" title="http://schema.org/identifier"> <span>identifier</span> </a></li>
+  <li><a href="#http://schema.org/name" title="http://schema.org/name"> <span>name</span> </a></li>
+  <li><a href="#http://schema.org/programmingLanguage" title="http://schema.org/programmingLanguage"> <span>programming Language</span> </a></li>
+  <li><a href="#http://schema.org/url" title="http://schema.org/url"> <span>url</span> </a></li>
   <li><a href="#/versionName" title="https://w3id.org/secure-chain/versionName"> <span>version Name</span> </a></li>
  </ul>
+ <div class="entity" id="http://schema.org/codeRepository">
+  <h3>code Repository<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/codeRepository</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/description">
+  <h3>description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/description</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/email">
+  <h3>email<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/email</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/familyName">
+  <h3>family Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/familyName</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/givenName">
+  <h3>given Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/givenName</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/identifier">
+  <h3>identifier<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/identifier</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/name">
+  <h3>name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/name</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/programmingLanguage">
+  <h3>programming Language<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/programmingLanguage</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://schema.org/url">
+  <h3>url<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/url</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://schema.org/">http://schema.org/</a>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="/versionName">
-  <h3>version Name<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>version Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/secure-chain/versionName</p>
+  <div class="comment">
+   <span class="markdown"> Represents the version name of a software or hardware product. </span>
+  </div>
   <div class="description">
    <dl>
     <dt>
-     has super-properties
+     has domain
     </dt>
     <dd>
-     <a href="http://schema.org/version" target="_blank" title="http://schema.org/version">version</a> <sup class="type-dp" title="data property">dp</sup>
+     <a href="#/HardwareVersion" title="https://w3id.org/secure-chain/HardwareVersion">Hardware Version</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#/SoftwareVersion" title="https://w3id.org/secure-chain/SoftwareVersion">Software Version</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
-     is also defined as
+     has range
     </dt>
     <dd>
-     <a href="#/versionName">object property</a>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -1086,15 +978,6 @@ This section provides details for each class and property defined by Secure Chai
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 </div>
 </div>
-</div>
-    
-
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

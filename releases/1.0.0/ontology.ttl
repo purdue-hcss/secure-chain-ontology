@@ -91,110 +91,27 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://schema.org/affiliation
 <http://schema.org/affiliation> rdf:type owl:ObjectProperty ;
-                                rdfs:domain <http://schema.org/Person> ;
-                                rdfs:range <http://schema.org/Organization> ;
-                                rdfs:comment """
-            Indicates an individual's affiliation with an organization.
-        """ .
-
-
-###  http://schema.org/codeRepository
-<http://schema.org/codeRepository> rdf:type owl:ObjectProperty ;
-                                   rdfs:domain <http://schema.org/SoftwareApplication> ;
-                                   rdfs:range <xsd:anyURI> .
+                                rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/contributor
 <http://schema.org/contributor> rdf:type owl:ObjectProperty ;
-                                rdfs:domain <http://schema.org/CreativeWork> ;
-                                rdfs:range <http://schema.org/Person> ;
-                                rdfs:comment """
-            Indicates the person who contributed to a creative work, such as a software application.
-        """ .
-
-
-###  http://schema.org/description
-<http://schema.org/description> rdf:type owl:ObjectProperty ;
-                                rdfs:domain <http://schema.org/Thing> ;
-                                rdfs:range <xsd:string> .
-
-
-###  http://schema.org/email
-<http://schema.org/email> rdf:type owl:ObjectProperty ;
-                          rdfs:domain <http://schema.org/Organization> ;
-                          rdfs:range <xsd:string> .
-
-
-###  http://schema.org/familyName
-<http://schema.org/familyName> rdf:type owl:ObjectProperty ;
-                               rdfs:domain <http://schema.org/Person> ;
-                               rdfs:range <xsd:string> .
-
-
-###  http://schema.org/givenName
-<http://schema.org/givenName> rdf:type owl:ObjectProperty ;
-                              rdfs:domain <http://schema.org/Person> ;
-                              rdfs:range <xsd:string> .
-
-
-###  http://schema.org/identifier
-<http://schema.org/identifier> rdf:type owl:ObjectProperty ;
-                               rdfs:domain <http://schema.org/Thing> ;
-                               rdfs:range <xsd:string> .
+                                rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/license
 <http://schema.org/license> rdf:type owl:ObjectProperty ;
-                            rdfs:domain <http://schema.org/CreativeWork> ;
-                            rdfs:range <http://schema.org/CreativeWork> ;
-                            rdfs:comment """
-            Associates a creative work, such as software, with its license.
-        """ .
+                            rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/manufacturer
 <http://schema.org/manufacturer> rdf:type owl:ObjectProperty ;
-                                 rdfs:domain <http://schema.org/Product> ;
-                                 rdfs:range <http://schema.org/Organization> ;
-                                 rdfs:comment """
-            Indicates the organization responsible for manufacturing a product, such as hardware.
-        """ .
-
-
-###  http://schema.org/name
-<http://schema.org/name> rdf:type owl:ObjectProperty ;
-                         rdfs:domain <http://schema.org/Thing> ;
-                         rdfs:range <xsd:string> .
+                                 rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/producer
 <http://schema.org/producer> rdf:type owl:ObjectProperty ;
-                             rdfs:domain <http://schema.org/CreativeWork> ;
-                             rdfs:range <http://schema.org/Organization> ;
-                             rdfs:comment """
-            Indictes tahe organization that produced a creative work, such as a software application.
-        """ .
-
-
-###  http://schema.org/programmingLanguage
-<http://schema.org/programmingLanguage> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <http://schema.org/SoftwareApplication> ;
-                                        rdfs:range <xsd:string> .
-
-
-###  http://schema.org/url
-<http://schema.org/url> rdf:type owl:ObjectProperty ;
-                        rdfs:domain <http://schema.org/Thing> ;
-                        rdfs:range <xsd:anyURI> .
-
-
-###  https://w3id.org/secure-chain/OperatesOn
-<https://w3id.org/secure-chain/OperatesOn> rdf:type owl:ObjectProperty ;
-                                           rdfs:domain <https://w3id.org/secure-chain/SoftwareVersion> ;
-                                           rdfs:range <https://w3id.org/secure-chain/HardwareVersion> ;
-                                           rdfs:comment """
-            Indicates that a particular version of software operates on a particular version of hardware.
-        """ .
+                             rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  https://w3id.org/secure-chain/dependsOn
@@ -237,14 +154,13 @@ xsd:date rdf:type rdfs:Datatype .
         """ .
 
 
-###  https://w3id.org/secure-chain/versionName
-<https://w3id.org/secure-chain/versionName> rdf:type owl:ObjectProperty ;
-                                            rdfs:domain [ rdf:type owl:Class ;
-                                                          owl:unionOf ( <https://w3id.org/secure-chain/HardwareVersion>
-                                                                        <https://w3id.org/secure-chain/SoftwareVersion>
-                                                                      )
-                                                        ] ;
-                                            rdfs:range <xsd:string> .
+###  https://w3id.org/secure-chain/operatesOn
+<https://w3id.org/secure-chain/operatesOn> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/secure-chain/SoftwareVersion> ;
+                                           rdfs:range <https://w3id.org/secure-chain/HardwareVersion> ;
+                                           rdfs:comment """
+            Indicates that a particular version of software operates on a particular version of hardware.
+        """ .
 
 
 ###  https://w3id.org/secure-chain/vulnerabilityType
@@ -270,48 +186,61 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://schema.org/codeRepository
-<http://schema.org/codeRepository> rdf:type owl:DatatypeProperty .
+<http://schema.org/codeRepository> rdf:type owl:DatatypeProperty ;
+                                   rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/description
-<http://schema.org/description> rdf:type owl:DatatypeProperty .
+<http://schema.org/description> rdf:type owl:DatatypeProperty ;
+                                rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/email
-<http://schema.org/email> rdf:type owl:DatatypeProperty .
+<http://schema.org/email> rdf:type owl:DatatypeProperty ;
+                          rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/familyName
-<http://schema.org/familyName> rdf:type owl:DatatypeProperty .
+<http://schema.org/familyName> rdf:type owl:DatatypeProperty ;
+                               rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/givenName
-<http://schema.org/givenName> rdf:type owl:DatatypeProperty .
+<http://schema.org/givenName> rdf:type owl:DatatypeProperty ;
+                              rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/identifier
-<http://schema.org/identifier> rdf:type owl:DatatypeProperty .
+<http://schema.org/identifier> rdf:type owl:DatatypeProperty ;
+                               rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/name
-<http://schema.org/name> rdf:type owl:DatatypeProperty .
+<http://schema.org/name> rdf:type owl:DatatypeProperty ;
+                         rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/programmingLanguage
-<http://schema.org/programmingLanguage> rdf:type owl:DatatypeProperty .
+<http://schema.org/programmingLanguage> rdf:type owl:DatatypeProperty ;
+                                        rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/url
-<http://schema.org/url> rdf:type owl:DatatypeProperty .
-
-
-###  http://schema.org/version
-<http://schema.org/version> rdf:type owl:DatatypeProperty .
+<http://schema.org/url> rdf:type owl:DatatypeProperty ;
+                        rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  https://w3id.org/secure-chain/versionName
 <https://w3id.org/secure-chain/versionName> rdf:type owl:DatatypeProperty ;
-                                            rdfs:subPropertyOf <http://schema.org/version> .
+                                            rdfs:domain [ rdf:type owl:Class ;
+                                                          owl:unionOf ( <https://w3id.org/secure-chain/HardwareVersion>
+                                                                        <https://w3id.org/secure-chain/SoftwareVersion>
+                                                                      )
+                                                        ] ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment """
+            Represents the version name of a software or hardware product.
+        """ .
 
 
 #################################################################
@@ -327,23 +256,23 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://schema.org/Organization
-<http://schema.org/Organization> rdf:type owl:Class .
+<http://schema.org/Organization> rdf:type owl:Class ;
+                                 rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/Person
-<http://schema.org/Person> rdf:type owl:Class .
+<http://schema.org/Person> rdf:type owl:Class ;
+                           rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/Product
-<http://schema.org/Product> rdf:type owl:Class .
+<http://schema.org/Product> rdf:type owl:Class ;
+                            rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  http://schema.org/SoftwareApplication
-<http://schema.org/SoftwareApplication> rdf:type owl:Class .
-
-
-###  http://schema.org/Thing
-<http://schema.org/Thing> rdf:type owl:Class .
+<http://schema.org/SoftwareApplication> rdf:type owl:Class ;
+                                        rdfs:isDefinedBy <http://schema.org/> .
 
 
 ###  https://w3id.org/secure-chain/Hardware
@@ -407,68 +336,6 @@ xsd:date rdf:type rdfs:Datatype .
             Represents types or classifications of vulnerabilities affecting secure supply chains.
         """ ;
                                                   rdfs:label "Vulnerability Type" .
-
-
-###  xsd:anyURI
-<xsd:anyURI> rdf:type owl:Class .
-
-
-###  xsd:string
-<xsd:string> rdf:type owl:Class .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-<http://schema.org/codeRepository> rdfs:comment """
-            Represents the URL of a software application's source code repository.
-        """ .
-
-
-<http://schema.org/description> rdfs:comment """
-            Provides a description for any resource in the ontology.
-        """ .
-
-
-<http://schema.org/email> rdfs:comment """
-            Represents the email address associated with a person or organization.
-        """ .
-
-
-<http://schema.org/familyName> rdfs:comment """
-            Represents the family name (surname) of a person.
-        """ .
-
-
-<http://schema.org/givenName> rdfs:comment """
-            Represents the given name (first name) of a person.
-        """ .
-
-
-<http://schema.org/identifier> rdfs:comment """
-            Represents a unique identifier for any resource in the ontology.
-        """ .
-
-
-<http://schema.org/name> rdfs:comment """
-            Represents the name of any resource in the ontology.
-        """ .
-
-
-<http://schema.org/programmingLanguage> rdfs:comment """
-            Indicates the programming language used to develop a software application.
-        """ .
-
-
-<http://schema.org/url> rdfs:comment """
-            Represents the URL of any resource in the ontology.
-        """ .
-
-
-<https://w3id.org/secure-chain/versionName> rdfs:comment """
-            Represents the version name of a software or hardware product.
-        """ .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

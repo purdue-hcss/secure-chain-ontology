@@ -74,92 +74,23 @@
 # 
 # http://schema.org/affiliation
 <http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/affiliation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
-<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/affiliation> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Organization> .
-<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/affiliation> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates an individual's affiliation with an organization.\n        " .
-# 
-# http://schema.org/codeRepository
-<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/codeRepository> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/SoftwareApplication> .
-<http://schema.org/SoftwareApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/codeRepository> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:anyURI> .
-<xsd:anyURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/affiliation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/contributor
 <http://schema.org/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/contributor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
-<http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/contributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Person> .
-<http://schema.org/contributor> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the person who contributed to a creative work, such as a software application.\n        " .
-# 
-# http://schema.org/description
-<http://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Thing> .
-<http://schema.org/Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
-<xsd:string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://schema.org/email
-<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Organization> .
-<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
-# 
-# http://schema.org/familyName
-<http://schema.org/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/familyName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
-<http://schema.org/familyName> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
-# 
-# http://schema.org/givenName
-<http://schema.org/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/givenName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
-<http://schema.org/givenName> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
-# 
-# http://schema.org/identifier
-<http://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Thing> .
-<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
+<http://schema.org/contributor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/license
 <http://schema.org/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/license> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
-<http://schema.org/license> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/CreativeWork> .
-<http://schema.org/license> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Associates a creative work, such as software, with its license.\n        " .
+<http://schema.org/license> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/manufacturer
 <http://schema.org/manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/manufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Product> .
-<http://schema.org/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/manufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Organization> .
-<http://schema.org/manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the organization responsible for manufacturing a product, such as hardware.\n        " .
-# 
-# http://schema.org/name
-<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Thing> .
-<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
+<http://schema.org/manufacturer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/producer
 <http://schema.org/producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/producer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CreativeWork> .
-<http://schema.org/producer> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Organization> .
-<http://schema.org/producer> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indictes tahe organization that produced a creative work, such as a software application.\n        " .
-# 
-# http://schema.org/programmingLanguage
-<http://schema.org/programmingLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/SoftwareApplication> .
-<http://schema.org/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
-# 
-# http://schema.org/url
-<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Thing> .
-<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:anyURI> .
-# 
-# https://w3id.org/secure-chain/OperatesOn
-<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/SoftwareVersion> .
-<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/HardwareVersion> .
-<https://w3id.org/secure-chain/OperatesOn> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a particular version of software operates on a particular version of hardware.\n        " .
+<http://schema.org/producer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # https://w3id.org/secure-chain/dependsOn
 <https://w3id.org/secure-chain/dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -193,18 +124,11 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/secure-chain/hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/SoftwareVersion> .
 <https://w3id.org/secure-chain/hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the relationship between a software product and its version.\n        " .
 # 
-# https://w3id.org/secure-chain/versionName
-<https://w3id.org/secure-chain/versionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/secure-chain/SoftwareVersion> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/secure-chain/HardwareVersion> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#range> <xsd:string> .
+# https://w3id.org/secure-chain/operatesOn
+<https://w3id.org/secure-chain/operatesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/secure-chain/operatesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/secure-chain/SoftwareVersion> .
+<https://w3id.org/secure-chain/operatesOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/secure-chain/HardwareVersion> .
+<https://w3id.org/secure-chain/operatesOn> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates that a particular version of software operates on a particular version of hardware.\n        " .
 # 
 # https://w3id.org/secure-chain/vulnerabilityType
 <https://w3id.org/secure-chain/vulnerabilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -229,37 +153,53 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://schema.org/codeRepository
 <http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/codeRepository> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/description
 <http://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/email
 <http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/familyName
 <http://schema.org/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/familyName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/givenName
 <http://schema.org/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/givenName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/identifier
 <http://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/name
 <http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/programmingLanguage
 <http://schema.org/programmingLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/url
 <http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://schema.org/version
-<http://schema.org/version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # https://w3id.org/secure-chain/versionName
 <https://w3id.org/secure-chain/versionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/version> .
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/secure-chain/SoftwareVersion> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/secure-chain/HardwareVersion> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the version name of a software or hardware product.\n        " .
 # 
 # 
 # 
@@ -271,19 +211,26 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # 
 # http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://schema.org/Intangible
 <http://schema.org/Intangible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://schema.org/Organization
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/Product
+<http://schema.org/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Product> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # http://schema.org/SoftwareApplication
-# 
-# http://schema.org/Thing
+<http://schema.org/SoftwareApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/SoftwareApplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 # 
 # https://w3id.org/secure-chain/Hardware
 <https://w3id.org/secure-chain/Hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -326,38 +273,5 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/secure-chain/VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Intangible> .
 <https://w3id.org/secure-chain/VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents types or classifications of vulnerabilities affecting secure supply chains.\n        " .
 <https://w3id.org/secure-chain/VulnerabilityType> <http://www.w3.org/2000/01/rdf-schema#label> "Vulnerability Type" .
-# 
-# xsd:anyURI
-# 
-# xsd:string
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<http://schema.org/codeRepository> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the URL of a software application's source code repository.\n        " .
-# 
-<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Provides a description for any resource in the ontology.\n        " .
-# 
-<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the email address associated with a person or organization.\n        " .
-# 
-<http://schema.org/familyName> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the family name (surname) of a person.\n        " .
-# 
-<http://schema.org/givenName> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the given name (first name) of a person.\n        " .
-# 
-<http://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents a unique identifier for any resource in the ontology.\n        " .
-# 
-<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the name of any resource in the ontology.\n        " .
-# 
-<http://schema.org/programmingLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Indicates the programming language used to develop a software application.\n        " .
-# 
-<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the URL of any resource in the ontology.\n        " .
-# 
-<https://w3id.org/secure-chain/versionName> <http://www.w3.org/2000/01/rdf-schema#comment> "\n            Represents the version name of a software or hardware product.\n        " .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
